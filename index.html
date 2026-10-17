@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://gganghodori.com/ -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="./강호의 도리_files/UxrxS3BtDteH5eTC9600JI2EjBXP-_6OmuxZvp-4VcQW5Oo2y5ykA8YA725PvEWKZIf-9OMDczG2on8ZCyoIdd2dKUwJdgHYEeDnrrPvIrlqA-6KxZeIHX71WxcnjkCyg9__yeQm3L86v9rtcWSHmDzZy3fStmN6M4UbhgpcK3s0sys-rue_EyisKnNV-NsaddaAY8guSZ6QhgxBY57Tg"></script><script type="text/javascript" src="./강호의 도리_files/pZk4VmcqTTSc8lvC9ETKoHj-tX_tJzS_VT5xcbkmGsQ6bljS9JVm6Krg-OzyREHWZpopsHeclGihzYyK-git98iwdshZDtRr-qp9I0CwnajzZ6C5V0Z2TpFX2u9pKugkY7K-FZ8EdNT2rh33OQcV4ucA5Z9IbXWtr-Yyu2oKfRTSVkFHuUGg4nZ0tjUnsIErE9XtKFOHqcamCe1sHnXyh"></script><script type="text/javascript" src="./강호의 도리_files/IKaSv51AbqVpG4OieXzmokwVuMxXk_HwtlDPYJ95VnV-VXjs2ScOTS_S3thjNKGm6H0BDHWKHuek3m4VNHDDEJWVNm83aJn2IPohKH6mX9bfp5JUPB1CNNnJyt5g_h06n4nCjeVYSrLMTyRsnst_21v4zRMBvhEB6ul8Dx3qwAkNSzrKMdTpTVTaIAX4ok69X8X-DyX8eqYejUMEsBIkU"></script><script type="text/javascript" src="./강호의 도리_files/GJDzw5P4b364HJ6Bwv85tMKWXRXWSNMMUJn9T83X0eC_ZqWCxQdz8pSUDDx-xqM77a2byBeEALIH4e9qiRfo5TgR3nphUlo5o2bOVvxe7GiMpOj49Sero0iUA8E5wR2_eheMm9iZ6YUET80mHnxaIhs1wIKmHfchVduVMCvbgmlJC2Mt0hSQQk_SdA_K40ZovMlypnAmjW-mKNyaBIOwP"></script><script type="text/javascript" src="./강호의 도리_files/yEenkt8pFD3TeajmkNSf2WAEzPxu2PEh0yTNUzA9Gu4zRIzkiycVCzV6cQaC9mXg6GnXgPf9OQIJcKgFcggXGlR4SNASEvp6vGrfZkgH96LBn1nqAQvRUP9XnMxB42n_BZ6a6r4jbGIKC4j7AF7Y99oA9VdFick7Xk8Qpxy7NykUQoEKszDAmAxhd2rxB-kDdSUZJOWk1s2IT60s2Jzgw"></script><script type="text/javascript" src="./강호의 도리_files/H-hRr-w6IsaJRmmHme8zW0HheZiBz8GaZpAJqQYULttc2Da3__k3rmy9jNsO7ok-5OGMfIgSB3UrMDE9VIsxabVBvLG9es3TGLxRaEzH7-l2C_XrfKFf1Edi5APwW3CdrYzQSPta3Closn7bwIB995nNRA2n-HNqM-1l4HUb5gCc5_3prWHLpwDMxtoXjI-vEV0guIG77jEHU6L-ukqIE"></script><script type="text/javascript" src="./강호의 도리_files/c-yx5Lz0DN15t7KE5xyI3wxXY8pWP37C9oBYSnlertQjqmCZbn1NyV1J38TzWToWlaUYzSe-Mk_edkmpqX3E2ZUgHpTfYXab0utbRlro_hYzZGhdFAukmEW59QzMX7sxYwb9TQ57VQSQLbmLRw_BxaJGFND7CFNDqC3PUjJswFaRe7OMfjk3RwAB9tO1O9PdttHcqJgTqKr56oM5ktiyu"></script><script async="" src="./강호의 도리_files/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BHFCCSWE0L');
+  </script>
+
+  <script>
+    // [수정됨] 인앱 브라우저 감지 함수 (Line 추가)
+    function isInAppBrowser() {
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
+      return (ua.indexOf("FBAN") > -1) || 
+             (ua.indexOf("FBAV") > -1) || 
+             (ua.indexOf("Instagram") > -1) || 
+             (ua.indexOf("Bytedance") > -1) || 
+             (ua.indexOf("TikTok") > -1) ||
+             (ua.indexOf("KAKAOTALK") > -1) ||
+             (ua.indexOf("Line") > -1);
+    }
+
+    // 🚨 [신규 추가] 자동 외부 브라우저 강제 전환 스크립트
+    function autoBypassInAppBrowser() {
+      if (!isInAppBrowser()) return; // 인앱 브라우저가 아니면 무사 통과
+
+      const ua = navigator.userAgent.toLowerCase();
+      const currentUrl = location.href;
+
+      // 1. 카카오톡 우회 (공식 스킴 사용)
+      if (ua.indexOf("kakaotalk") > -1) {
+        location.href = 'kakaotalk://web/openExternal?url=' + encodeURIComponent(currentUrl);
+        return;
+      }
+
+      // 2. 안드로이드 기기 우회 (크롬 강제 실행)
+      if (ua.indexOf("android") > -1) {
+        const intentUrl = currentUrl.replace(/https?:\/\//i, '');
+        location.href = 'intent://' + intentUrl + '#Intent;scheme=https;package=com.android.chrome;end';
+        return;
+      }
+
+      // ※ 아이폰(iOS)의 경우 강제 우회가 불가능하므로 그대로 통과시킵니다.
+      // 이후 하단 init() 함수에 작성하신 로직이 작동하여 noticeOverlay 경고창을 띄우게 됩니다.
+    }
+
+    // 🚨 스크립트가 읽히자마자 즉시 실행 (화면이 뜨기도 전에 우회시켜 이탈 방지)
+    autoBypassInAppBrowser();
+  </script>
+
+  
+  <title>강호의 도리</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="manifest" href="https://gganghodori.com/manifest.json">
+  <meta name="theme-color" content="#141e30">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="강호의 도리">
+  <link rel="apple-touch-icon" href="./강호의 도리_files/Kakao-Talk-20260405-041233450-removebg-preview.png">
+
+  <style>
+    #siteSelect, label[for="siteSelect"], #patternPreview { display: none; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 16px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: linear-gradient(135deg, #141e30, #243b55); color: #222; transition: background 0.25s ease, color 0.25s ease; }
+    .card { width: 100%; max-width: 480px; background: #ffffff; border-radius: 18px; padding: 18px 20px 20px; box-shadow: 0 18px 40px rgba(0,0,0,0.35); transition: background 0.25s ease, box-shadow 0.25s ease, color 0.25s ease; }
+    
+    .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; gap: 4px; }
+    .top-btn { flex-shrink: 0; border: none; background: #f1f3fb; color: #333; border-radius: 999px; padding: 6px 10px; font-size: 0.75rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 4px; font-weight: 700; transition: 0.2s; white-space: nowrap; }
+    .top-btn.install { background: #fffbeb; color: #d97706; border: 1px solid #fde68a; animation: pulse 2s infinite; }
+    .top-btn:active { opacity: 0.8; transform: translateY(1px); }
+    @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); } 70% { box-shadow: 0 0 0 6px rgba(245, 158, 11, 0); } 100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); } }
+
+    .title-wrap { text-align: center; margin-bottom: 22px; }
+    .title-wrap h1 { margin: 0; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 2rem; font-weight: 900; letter-spacing: -1px; filter: drop-shadow(0 3px 6px rgba(221, 36, 118, 0.35)); }
+    .title-mascot { width: 36px; height: 36px; object-fit: contain; border-radius: 8px; }
+    .gradient-text { background: linear-gradient(135deg, #ff512f, #dd2476); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .title-wrap .subtitle { display: block; font-size: 0.85rem; color: #6b7280; margin-top: 6px; font-weight: 600; letter-spacing: 0.5px; }
+
+    label { display: block; font-size: 0.84rem; margin-bottom: 4px; color: #444; }
+    
+    .search-box-container { position: relative; margin-bottom: 14px; }
+    #numberInput {
+      width: 100%; padding: 14px 16px; border-radius: 12px; border: 2px solid #ffd700;
+      font-size: 1.1rem; font-weight: 900; text-align: center; outline: none; background: #fff; color: #111; letter-spacing: 1px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); animation: goldGlow 2s infinite alternate; transition: 0.3s;
+    }
+    #numberInput:focus { border-color: #ffaa00; box-shadow: 0 0 20px rgba(255, 170, 0, 0.6); }
+    @keyframes goldGlow {
+      from { box-shadow: 0 0 8px #ffd700, 0 0 0px #ffd700 inset; }
+      to { box-shadow: 0 0 18px #ffaa00, 0 0 5px #ffd700 inset; }
+    }
+
+    .hint { font-size: 0.78rem; color: #888; margin-top: 6px; text-align: center; font-weight: bold; }
+
+    .recent-searches { margin-top: 8px; font-size: 0.8rem; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: center; }
+    .recent-tag { background: #e5e7eb; color: #374151; padding: 3px 10px; border-radius: 999px; cursor: pointer; font-size: 0.75rem; font-weight: 600; transition: 0.1s; }
+    .recent-tag:hover { background: #d1d5db; }
+
+    .btn-main { width: 100%; margin-top: 10px; padding: 12px; border-radius: 12px; border: none; font-size: 1.05rem; font-weight: 800; cursor: pointer; background: linear-gradient(135deg, #4f8cff, #6a5cff); color: #fff; box-shadow: 0 8px 20px rgba(79,140,255,0.45); transition: transform 0.08s ease, box-shadow 0.08s ease, opacity 0.08s ease; }
+    .btn-main:active { transform: translateY(2px); box-shadow: 0 4px 10px rgba(79,140,255,0.45); opacity: 0.9; }
+    .btn-random { margin-top: 8px; margin-bottom: 12px; background: linear-gradient(135deg, #10b981, #059669); box-shadow: 0 8px 20px rgba(16,185,129,0.35); font-size: 0.95rem; }
+
+    .section { margin-top: 18px; border-top: 1px solid #eceff5; padding-top: 10px; }
+    .section-title { font-size: 0.9rem; font-weight: 700; color: #4f46e5; text-align: center; margin-bottom: 6px; position: relative; letter-spacing: 0.03em; }
+    .section-title::after { content: ""; display: block; width: 140px; height: 2px; border-radius: 999px; margin: 4px auto 0; background: linear-gradient(90deg, #4f46e5, #6366f1); opacity: 0.9; }
+    .section-subtitle { text-align: center; font-size: 0.78rem; color: #888; margin-top: 8px; margin-bottom: 12px; word-break: keep-all; }
+
+    /* ✨ 티징 효과 관련 스타일 */
+    .premium-container { position: relative; border-radius: 12px; overflow: hidden; min-height: 350px; }
+    .locker-overlay { position: absolute; inset: 0; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(2px); border-radius: 12px; padding: 16px; }
+    .blurred-content { filter: blur(5px) grayscale(30%); opacity: 0.6; pointer-events: none; user-select: none; transition: 0.3s ease; }
+    .unlocked-content { filter: none; opacity: 1; pointer-events: auto; user-select: auto; transition: 0.3s ease; }
+
+    /* 🔐 락커 박스 디자인 */
+    .locker-box { background: linear-gradient(135deg, #1e293b, #0f172a); border: 2px solid #3b82f6; border-radius: 16px; padding: 24px 20px; text-align: center; width: 100%; max-width: 320px; box-shadow: 0 10px 40px rgba(0,0,0,0.8); }
+    .locker-icon { font-size: 3.5rem; margin-bottom: 8px; filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5)); animation: pulseLock 2s infinite; }
+    .locker-title { font-size: 1.2rem; font-weight: 900; color: #ffd700; margin-bottom: 8px; letter-spacing: -0.5px; }
+    .locker-desc { font-size: 0.85rem; color: #94a3b8; line-height: 1.5; margin-bottom: 16px; font-weight: 600; word-break: keep-all; }
+    .locker-btn-sub { background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; font-size: 1.05rem; font-weight: 900; border: none; padding: 14px 20px; border-radius: 999px; cursor: pointer; box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4); transition: 0.2s; width: 100%; letter-spacing: -0.5px; }
+    .locker-btn-sub:active { transform: translateY(2px); box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4); }
+    .locker-sub-desc { font-size: 0.75rem; color: #cbd5e1; margin-top: 12px; font-weight: 600; text-align: center; word-break: keep-all; line-height: 1.4; }
+    @keyframes pulseLock { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+
+    .hl-banner { display: flex; align-items: center; background: linear-gradient(135deg, #fff5f5, #ffe4e6); border: 2px solid #fda4af; border-radius: 14px; padding: 12px; margin-bottom: 14px; cursor: pointer; position: relative; transition: 0.2s; }
+    .hl-banner:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(225,29,72,0.15); }
+    .hl-img { width: 64px; height: 64px; border-radius: 10px; object-fit: cover; margin-right: 12px; border: 1px solid #fda4af; flex-shrink: 0; }
+    .hl-info { flex: 1; display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+    .hl-badge { display: table; background: #e11d48; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; margin-bottom: 5px; }
+    .hl-title { font-size: 0.85rem; font-weight: 800; color: #881337; margin-bottom: 4px; line-height: 1.3; }
+    .hl-desc { font-size: 0.75rem; color: #be123c; font-weight: 600; line-height: 1.3; word-break: keep-all; }
+
+    .tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+    .tab-btn { flex: 1; padding: 8px; border: none; border-radius: 10px; background: #f3f4f6; color: #4b5563; font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: 0.2s; }
+    .tab-btn.active { background: #4f46e5; color: #fff; }
+
+    .preset-search-wrap { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+    .preset-search { flex: 1; padding: 6px 10px; font-size: 0.8rem; border: 1px solid #d1d5db; border-radius: 999px; outline: none; background: #f5f7fb; color: #333; width: 100%; }
+    .preset-search::placeholder { font-size: 0.75rem; color: #9ca3af; }
+    .preset-search:focus { border-color: #4f8cff; background: #fff; }
+
+    .preset-tag-wrap { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 0 0 10px; background: transparent; }
+    .tag-chip { border: none; background: #eef2ff; color: #4338ca; border-radius: 999px; padding: 3px 8px; font-size: 0.7rem; font-weight: 800; cursor: pointer; }
+    .tag-chip.active { background: #4f46e5; color: #fff; }
+    .tag-chip.clear { background: #fee2e2; color: #b91c1c; }
+    .work-tag { display: inline-block; background: #eef2ff; color: #4338ca; border-radius: 999px; padding: 1px 6px; font-size: 0.65rem; font-weight: 800; }
+
+
+    .preset-list { display: grid; grid-template-columns: 1fr; gap: 8px; }
+    .preset-card { display: flex; align-items: center; gap: 8px; background: #f5f7ff; border-radius: 12px; padding: 8px 8px; cursor: pointer; transition: background 0.12s ease, transform 0.05s ease; }
+    .preset-card:hover { background: #e6ebff; }
+    .preset-card:active { transform: translateY(1px); }
+    .preset-img { width: 52px; height: 52px; border-radius: 10px; object-fit: cover; flex-shrink: 0; }
+    .preset-info { display: flex; flex-direction: column; justify-content: center; flex: 1; min-width: 0; }
+    .preset-title { font-size: 0.82rem; font-weight: 600; color: #333; margin-bottom: 2px; line-height: 1.3; }
+    .preset-tags { display: flex; flex-wrap: wrap; gap: 4px; margin: 3px 0 2px; }
+    .preset-badge { display: flex; align-items: center; gap: 3px; font-size: 0.75rem; color: #ffb400; font-weight: 600; white-space: nowrap; margin-top: 2px; min-width: 0; }
+    .preset-badge .star { font-size: 0.9rem; }
+    .fav-btn { font-size: 1.2rem; padding: 4px 6px; cursor: pointer; user-select: none; transition: transform 0.1s; margin-left: auto; flex-shrink: 0; }
+    .fav-btn:active { transform: scale(1.3); }
+
+    .pager { margin-top: 10px; display: flex; justify-content: center; align-items: center; gap: 6px; font-size: 0.78rem; color: #6b7280; }
+    .pager-btn { border: none; border-radius: 999px; padding: 4px 12px; font-size: 0.78rem; font-weight: bold; cursor: pointer; background: #e5e7eb; color: #374151; }
+    .pager-btn:disabled { opacity: 0.4; cursor: default; }
+    .pager-btn:active:not(:disabled) { transform: translateY(1px); }
+    .pager-info { padding: 2px 6px; font-weight: bold; }
+
+    .social-links { margin-top: 8px; display: flex; justify-content: center; gap: 10px; }
+    .social-icon { width: 28px; height: 28px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.9rem; text-decoration: none; color: #fff; }
+    .social-icon.youtube { background: #ff0000; }
+    .social-icon.instagram { background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5); }
+    .social-icon.tiktok { background: #000000; }
+
+    .share-btn { width: 100%; margin-top: 14px; padding: 12px; border-radius: 12px; border: 2px dashed #4f8cff; background: #f5f7ff; color: #4f8cff; font-weight: 700; cursor: pointer; font-size: 0.95rem; transition: 0.2s; display: flex; align-items: center; justify-content: center; gap: 6px; }
+    .share-btn:active { transform: translateY(1px); }
+
+    /* 🪧 오버레이 및 모달 공통 */
+    .overlay { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.98); z-index: 99999; display: none; flex-direction: column; align-items: center; justify-content: center; backdrop-filter: blur(10px); }
+    .modal { width: 85%; max-width: 360px; background: #fff; border-radius: 20px; padding: 24px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+    
+    .notice-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.65); display: none; align-items: center; justify-content: center; z-index: 9999; backdrop-filter: blur(3px); }
+    .notice-modal { width: 90%; max-width: 360px; background: #ffffff; border-radius: 20px; padding: 24px 20px 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); font-size: 0.9rem; line-height: 1.5; }
+    .notice-icon { font-size: 3.5rem; text-align: center; margin-bottom: 8px; line-height: 1; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1)); }
+    .notice-title { font-weight: 900; margin-bottom: 16px; font-size: 1.3rem; text-align: center; color: #e11d48; letter-spacing: -0.5px; }
+    .notice-body { color: #374151; font-size: 0.9rem; line-height: 1.5; }
+    .highlight-text { font-weight: 800; color: #111; text-align: center; margin-top: 0; margin-bottom: 14px; font-size: 1rem; word-break: keep-all; }
+    .instruction-box { background: #fef2f2; border: 1px solid #fecaca; padding: 14px; border-radius: 10px; font-weight: 600; margin-bottom: 16px; color: #b91c1c; font-size: 0.85rem; line-height: 1.6; text-align: left; }
+    .server-warning { font-size: 0.78rem; color: #ef4444; font-weight: 700; word-break: keep-all; margin: 0; text-align: center; padding: 10px; border-radius: 8px; }
+    .notice-actions { margin-top: 20px; display: flex; justify-content: center; gap: 10px; }
+    .notice-btn { flex: 1; border: none; border-radius: 12px; padding: 14px; font-size: 1rem; font-weight: 800; cursor: pointer; background: linear-gradient(135deg, #e11d48, #be123c); color: #fff; box-shadow: 0 6px 16px rgba(225,29,72,0.35); transition: transform 0.1s, box-shadow 0.1s; letter-spacing: 0.5px; }
+    .notice-btn:active { transform: translateY(2px); box-shadow: 0 2px 8px rgba(225,29,72,0.35); }
+    .btn-secondary { background: #e5e7eb; color: #4b5563; box-shadow: none; }
+    
+    /* 👑 멤버십 입장 화면 */
+    #memberOverlay { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.98); z-index: 1000000; display: flex; flex-direction: column; align-items: center; justify-content: center; backdrop-filter: blur(10px); padding: 24px; }
+    #firstClickLayer { position: fixed; inset: 0; z-index: 1000001; background: transparent; }
+    .member-input { background: #1e293b; border: 2px solid #f59e0b; color: #fff; text-align: center; font-size: 1.15rem; letter-spacing: 2px; padding: 14px 16px; border-radius: 16px; width: min(280px, 86vw); outline: none; margin-bottom: 20px; font-weight: 800; transition: 0.2s; box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+    .member-input:focus { border-color: #fbbf24; box-shadow: 0 0 20px rgba(245, 158, 11, 0.35); }
+    .member-btn { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; font-size: 1.1rem; font-weight: 800; border: none; padding: 14px 40px; border-radius: 999px; cursor: pointer; transition: transform 0.1s, box-shadow 0.1s; width: min(280px, 86vw); box-shadow: 0 6px 16px rgba(217, 119, 6, 0.4); }
+    .member-btn:active { transform: translateY(2px); }
+    .member-join-box { width: min(280px, 86vw); margin-top: 22px; padding: 16px 14px 14px; border-radius: 16px; background: rgba(255,255,255,0.05); border: 1px solid rgba(245,158,11,0.28); text-align: center; }
+    .member-join-copy { margin: 0 0 12px; color: #cbd5e1; font-size: 0.82rem; font-weight: 600; line-height: 1.55; word-break: keep-all; }
+    .member-join-btn { width: 100%; border: none; border-radius: 999px; padding: 12px 16px; font-size: 0.92rem; font-weight: 800; cursor: pointer; background: #fff; color: #111827; }
+    .member-join-btn + .member-join-btn { margin-top: 8px; }
+    #memberYoutubeBtn { background: #ff0000; color: #fff; }
+    #memberPatreonBtn { background: #ff424d; color: #fff; }
+    #memberDiscordBtn { background: #5865F2; color: #fff; }
+    .member-join-btn:active { transform: translateY(1px); opacity: 0.9; }
+    body.member-locked .card { visibility: hidden; pointer-events: none; }
+
+    /* 🔒 앱 잠금 화면 스타일 */
+    .pin-title { font-size: 1.8rem; color: #fff; font-weight: 900; margin-bottom: 8px; letter-spacing: -0.5px; }
+    .pin-desc { font-size: 0.9rem; color: #94a3b8; margin-bottom: 24px; font-weight: 600; text-align: center;}
+    .pin-input { background: #1e293b; border: 2px solid #3b82f6; color: #fff; text-align: center; font-size: 2.5rem; letter-spacing: 15px; padding: 12px; border-radius: 16px; width: 220px; outline: none; margin-bottom: 24px; font-weight: 900; font-family: monospace; transition: 0.2s; box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+    .pin-input:focus { border-color: #60a5fa; box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); }
+    .pin-btn { background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; font-size: 1.1rem; font-weight: 800; border: none; padding: 14px 40px; border-radius: 999px; cursor: pointer; transition: transform 0.1s, box-shadow 0.1s; width: 220px; box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4); }
+
+    /* ✨ 3초 광고 대기 모달 */
+    #adModal { background: rgba(0,0,0,0.85); color: #fff; display: none; z-index: 100000; }
+    .ad-mascot { width: 56px; height: 56px; border-radius: 12px; margin-bottom: 12px; animation: bounce 0.6s infinite alternate cubic-bezier(0.5, 0.05, 1, 0.5); box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+    @keyframes bounce { from { transform: translateY(0); } to { transform: translateY(-12px); } }
+    .loader-container { position: relative; width: 64px; height: 64px; margin: 16px auto; display: flex; align-items: center; justify-content: center; }
+    .loader { position: absolute; inset: 0; border: 5px solid #334155; border-top: 5px solid #ffd700; border-radius: 50%; animation: spin 1s linear infinite; }
+    .countdown { font-size: 1.6rem; font-weight: 900; color: #ffd700; z-index: 2; margin-top: 2px; }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+    /* 📝 저장된 번호 메모 스타일 (평점 하트 추가) */
+    .saved-num-card { background: #f1f5f9; border-radius: 10px; padding: 10px 12px; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; border: 1px solid #e2e8f0; cursor: pointer; transition: 0.1s; margin-bottom: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .saved-num-card:active { transform: scale(0.98); }
+    .saved-num-info { display: flex; flex-direction: column; justify-content: center; flex: 1; min-width: 0; margin-right: 8px; }
+    .saved-num-memo { font-size: 0.8rem; color: #64748b; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top:2px; }
+    .del-num-btn { background: none; border: none; color: #ef4444; font-size: 1.3rem; cursor: pointer; padding: 0 4px; font-weight: 900; display:flex; align-items:center; }
+    .rate-heart { transition: transform 0.1s; display: inline-block; }
+    .rate-heart:active { transform: scale(1.3); }
+
+    /* 📢 흐르는 전광판 스타일 */
+    .marquee-wrap { background: rgba(225, 29, 72, 0.15); border: 1px solid rgba(225, 29, 72, 0.3); border-radius: 8px; overflow: hidden; display: flex; align-items: center; padding: 6px 10px; margin-bottom: 14px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .marquee-icon { font-size: 0.9rem; margin-right: 8px; animation: pulse 1s infinite alternate; }
+    .marquee-content { flex: 1; overflow: hidden; position: relative; height: 1.2rem; }
+    .marquee-text { position: absolute; white-space: nowrap; font-size: 0.85rem; font-weight: 800; color: #fda4af; animation: marquee 12s linear infinite; }
+    @keyframes marquee { 0% { left: 100%; } 100% { left: -100%; } }
+
+    /* 🌙 다크모드 대응 추가 */
+    body.dark { background: radial-gradient(circle at top, #111827, #020617); color: #e5e7eb; }
+    body.dark .card { background: #020617; box-shadow: 0 18px 40px rgba(0,0,0,0.7); color: #e5e7eb; }
+    body.dark label { color: #e5e7eb; }
+    body.dark #numberInput { background: #1e293b; color: #fff; border-color: #ffd700; }
+    body.dark #numberInput::placeholder { color: #6b7280; }
+    body.dark .hint { color: #9ca3af; }
+    body.dark .recent-tag { background: #1f2937; color: #d1d5db; }
+    body.dark .recent-tag:hover { background: #374151; }
+    body.dark .hl-banner { background: linear-gradient(135deg, #2c121f, #4c0519); border-color: #9f1239; }
+    body.dark .hl-title { color: #fecdd3; }
+    body.dark .hl-desc { color: #fda4af; }
+    body.dark .tab-btn { background: #1f2937; color: #9ca3af; }
+    body.dark .tab-btn.active { background: #4f46e5; color: #fff; }
+    body.dark .preset-card { background: #0f172a; border: 1px solid #1f2937; }
+    body.dark .preset-card:hover { background: #1e293b; border-color: #374151; }
+    body.dark .preset-title { color: #e5e7eb; }
+    body.dark .section-title { color: #818cf8; }
+    body.dark .section-subtitle { color: #9ca3af; }
+    body.dark .title-wrap .subtitle { color: #9ca3af; }
+    body.dark .preset-search { background: #111827; border-color: #374151; color: #e5e7eb; }
+    body.dark .preset-search::placeholder { color: #6b7280; }
+    body.dark .pager-btn { background: #1f2937; color: #d1d5db; }
+    body.dark .share-btn { background: #0f172a; border-color: #3b82f6; color: #60a5fa; }
+    body.dark .notice-modal { background: #0f172a; border: 1px solid #1e293b; box-shadow: 0 20px 40px rgba(0,0,0,0.8); }
+    body.dark .notice-title { color: #f43f5e; }
+    body.dark .highlight-text { color: #f8fafc; }
+    body.dark .instruction-box { background: #4c0519; border-color: #9f1239; color: #fecdd3; }
+    body.dark .btn-secondary { background: #1f2937; color: #9ca3af; }
+    body.dark .top-btn { background: #1f2937; color: #d1d5db; }
+    body.dark .top-btn.install { background: #2d1b01; color: #fbbf24; border-color: #78350f; }
+    body.dark .saved-num-card { background: #1e293b; border-color: #334155; }
+    body.dark .saved-num-info { color: #f8fafc; }
+    body.dark .saved-num-memo { color: #94a3b8; }
+    body.dark #saveModalMemo { background: #111827; border-color: #374151; color: #fff; }
+  </style>
+</head>
+
+<body class="dark member-locked">
+  
+
+  <div id="memberOverlay" style="display: flex;">
+    <div class="pin-title">👑 멤버십 전용</div>
+    <div class="pin-desc">비밀코드는 멤버십 가입 후 제공됩니다.<br>이미 코드를 받으셨다면 아래에 입력해 주세요.</div>
+    <input type="password" id="memberInput" class="member-input" placeholder="멤버십 비밀코드" autocomplete="off">
+    <button class="member-btn" id="memberUnlockBtn" type="button">입장하기</button>
+    <p id="memberError" style="color: rgb(239, 68, 68); display: block; margin-top: 16px; font-weight: bold; font-size: 0.9rem;">비밀번호가 일치하지 않습니다.</p>
+    <div id="memberAdWait" style="display:none; width:min(280px,86vw); text-align:center; margin-top:8px;">
+      <div id="memberAdCount" style="font-size:2.4rem; font-weight:900; color:#fbbf24; margin-bottom:10px;">3</div>
+      <p style="color:#e2e8f0; font-size:0.9rem; font-weight:700; line-height:1.55; word-break:keep-all; margin:0 0 12px;">
+        3초 후 쿠팡 광고 창이 열립니다.<br>
+        광고를 본 뒤 이 창으로 돌아오면<br>
+        강호의 도리를 이용할 수 있습니다.
+      </p>
+      <p style="color:#94a3b8; font-size:0.72rem; font-weight:600; line-height:1.5; word-break:keep-all; margin:0;">
+        이 포스팅은 쿠팡 파트너스 활동의 일환으로,<br>
+        이에 따른 일정액의 수수료를 제공받습니다.
+      </p>
+    </div>
+    <div class="member-join-box">
+      <p class="member-join-copy">아직 비밀코드가 없다면<br>멤버십 가입 후 안내받을 수 있습니다.</p>
+      <button class="member-join-btn" id="memberYoutubeBtn" type="button">🎟유튜브 멤버십 가입하러 가기</button>
+      <button class="member-join-btn" id="memberPatreonBtn" type="button">🎫패트리온 멤버십 가입하러 가기</button>
+      <button class="member-join-btn" id="memberDiscordBtn" type="button">🎧사브카루 디스코드 바로가기</button>
+    </div>
+    <p style="color:#64748b; margin-top:18px; font-size:0.75rem; font-weight:600; text-align:center; line-height:1.5;">오늘 한 번 입장하면 자정까지 다시 묻지 않습니다.</p>
+  </div>
+
+  <div class="card">
+    
+    <div class="top-row">
+      <button class="top-btn install" id="installAppBtn" type="button" style="display: inline-flex;">📲 앱 설치하기</button>
+      <div style="display: flex; gap: 4px; margin-left: auto;">
+        <button class="top-btn" id="themeToggle" type="button">☀️ 라이트모드</button>
+      </div>
+    </div>
+
+    <div class="marquee-wrap">
+      <div class="marquee-icon">🔥</div>
+      <div class="marquee-content">
+        <div class="marquee-text" id="topMarqueeText">[공지] 추천 작품은 바로 감상할 수 있습니다! 번호를 검색하면 더 빠르게 찾을 수 있어요.</div>
+      </div>
+    </div>
+
+    <div class="title-wrap">
+      <h1>
+        <img src="./강호의 도리_files/Kakao-Talk-20260405-041233450-removebg-preview.png" class="title-mascot" alt="마스코트">
+        <span class="gradient-text">강호의 도리</span>
+      </h1>
+      <span class="subtitle">신속하고 편리하게 해피타임을 즐기세요!</span>
+    </div>
+
+    <div class="field">
+      <label for="siteSelect">사이트 선택</label>
+      <select id="siteSelect"><option value="hitomi-reader">Hitomi Reader</option><option value="hitomi-galleries">Hitomi Galleries</option><option value="custom-base">직접 지정 (기본 Hitomi Reader)</option></select>
+      <div id="patternPreview" class="preview"></div>
+    </div>
+
+    <div class="search-box-container">
+      <label for="numberInput">🎯 강호의 도리 검색기 (번호 전용)</label>
+      <input id="numberInput" type="text" inputmode="numeric" autocomplete="off" placeholder="품번 또는 추천작 번호 (예: 177)">
+      
+      <div style="display: flex; gap: 8px; margin-top: 10px;">
+        <button class="btn-main" id="goButton" type="button" style="margin-top: 0; flex: 1;">😎 감상하러 가기 😎</button>
+        <button class="btn-main" id="saveNumBtn" type="button" style="margin-top: 0; background: linear-gradient(135deg, #f59e0b, #d97706); flex: 0.35; box-shadow: 0 8px 20px rgba(245,158,11,0.35);">⭐ 저장</button>
+      </div>
+
+      <div class="recent-searches" id="recentSearches"></div>
+      
+      <div id="savedNumbersList" style="margin-top: 12px; display: flex; flex-direction: column;"></div>
+    </div>
+    
+    <div class="section" id="presetSection">
+      <div class="section-title">추천 작품 감상하기</div>
+      
+      <div class="premium-container" id="premiumContentContainer">
+        <div id="unlockableContentUI">
+          <div id="highlightContainer">
+        <div class="hl-banner" onclick="openPreset('https://hitomi.la/reader/2162039.html#1')">
+           <img src="./강호의 도리_files/01.png" class="hl-img" alt="highlight">
+           <div class="hl-info">
+             <div class="hl-badge">🌟 오늘의 추천 명작 (매일 밤 8시 업데이트)</div>
+             <div class="hl-title">063. 친구의 단골이 되는 만화</div>
+             <div class="hl-desc">강호의 고수가 추천하는 오늘의 명작👍</div>
+           </div>
+        </div>
+      </div>
+          
+          <div class="tabs">
+            <button class="tab-btn active" id="tabAll">🌟 전체 작품</button>
+            <button class="tab-btn" id="tabFav">💖 내 보관함</button>
+            <button class="tab-btn" id="tabRecent">🕒 최근 기록</button>
+          </div>
+
+          <div class="preset-search-wrap">
+            <input id="authorSearch" type="text" class="preset-search" placeholder="태그검색(예: 여사친)">
+            <input id="presetSearch" type="text" class="preset-search" placeholder="번호 또는 제목 (예: 179, 유령)">
+          </div>
+          <div class="preset-tag-wrap" id="presetTagWrap"><button type="button" class="tag-chip" data-tag="순애">#순애</button><button type="button" class="tag-chip" data-tag="학교">#학교</button><button type="button" class="tag-chip" data-tag="여친">#여친</button><button type="button" class="tag-chip" data-tag="일상">#일상</button><button type="button" class="tag-chip" data-tag="여사친">#여사친</button><button type="button" class="tag-chip" data-tag="거유">#거유</button><button type="button" class="tag-chip" data-tag="누나">#누나</button><button type="button" class="tag-chip" data-tag="소꿉친구">#소꿉친구</button><button type="button" class="tag-chip" data-tag="하렘">#하렘</button><button type="button" class="tag-chip" data-tag="선후배">#선후배</button><button type="button" class="tag-chip" data-tag="직장">#직장</button><button type="button" class="tag-chip" data-tag="가족">#가족</button><button type="button" class="tag-chip" data-tag="일진">#일진</button><button type="button" class="tag-chip" data-tag="갸루">#갸루</button><button type="button" class="tag-chip" data-tag="옆집">#옆집</button><button type="button" class="tag-chip" data-tag="판타지">#판타지</button><button type="button" class="tag-chip" data-tag="무표정">#무표정</button><button type="button" class="tag-chip" data-tag="NTR">#NTR</button><button type="button" class="tag-chip" data-tag="유부녀">#유부녀</button><button type="button" class="tag-chip" data-tag="코스프레">#코스프레</button><button type="button" class="tag-chip" data-tag="수영복">#수영복</button><button type="button" class="tag-chip" data-tag="온천">#온천</button><button type="button" class="tag-chip" data-tag="최면">#최면</button></div>
+          
+          <button class="btn-main btn-random" id="randomButton" type="button">🎲 추천 작품 랜덤으로 감상하기 🎲</button>
+          
+          <div class="preset-list" id="presetList"><div class="preset-card">
+          <img src="./강호의 도리_files/206.jpg" class="preset-img" alt="206. 이웃집여자가 꼬시는 만화(6편)">
+          <div class="preset-info">
+            <div class="preset-title">206. 이웃집여자가 꼬시는 만화(6편)</div>
+            <div class="preset-tags"><span class="work-tag">#옆집</span><span class="work-tag">#순애</span><span class="work-tag">#일상</span></div>
+            <div class="preset-badge">
+              <span class="star">★</span><span>Herio</span>
+            </div>
+          </div>
+          <div class="fav-btn" onclick="toggleFav(event, 'https://hitomi.la/reader/4190800.html#1')">🤍</div>
+        </div><div class="preset-card">
+          <img src="./강호의 도리_files/205.jpg" class="preset-img" alt="205. 이웃집여자가 꼬시는 만화(5편)">
+          <div class="preset-info">
+            <div class="preset-title">205. 이웃집여자가 꼬시는 만화(5편)</div>
+            <div class="preset-tags"><span class="work-tag">#옆집</span><span class="work-tag">#순애</span><span class="work-tag">#일상</span></div>
+            <div class="preset-badge">
+              <span class="star">★</span><span>Herio</span>
+            </div>
+          </div>
+          <div class="fav-btn" onclick="toggleFav(event, 'https://hitomi.la/reader/3179153.html#1')">🤍</div>
+        </div><div class="preset-card">
+          <img src="./강호의 도리_files/204.jpg" class="preset-img" alt="204. 이웃집여자가 꼬시는 만화(4편)">
+          <div class="preset-info">
+            <div class="preset-title">204. 이웃집여자가 꼬시는 만화(4편)</div>
+            <div class="preset-tags"><span class="work-tag">#옆집</span><span class="work-tag">#순애</span><span class="work-tag">#일상</span></div>
+            <div class="preset-badge">
+              <span class="star">★</span><span>Herio</span>
+            </div>
+          </div>
+          <div class="fav-btn" onclick="toggleFav(event, 'https://hitomi.la/reader/2781244.html#1')">🤍</div>
+        </div><div class="preset-card">
+          <img src="./강호의 도리_files/203.jpg" class="preset-img" alt="203. 이웃집여자가 꼬시는 만화(3편)">
+          <div class="preset-info">
+            <div class="preset-title">203. 이웃집여자가 꼬시는 만화(3편)</div>
+            <div class="preset-tags"><span class="work-tag">#옆집</span><span class="work-tag">#순애</span><span class="work-tag">#일상</span></div>
+            <div class="preset-badge">
+              <span class="star">★</span><span>Herio</span>
+            </div>
+          </div>
+          <div class="fav-btn" onclick="toggleFav(event, 'https://hitomi.la/reader/2304181.html#1')">🤍</div>
+        </div><div class="preset-card">
+          <img src="./강호의 도리_files/202.jpg" class="preset-img" alt="202. 이웃집여자가 꼬시는 만화(2편)">
+          <div class="preset-info">
+            <div class="preset-title">202. 이웃집여자가 꼬시는 만화(2편)</div>
+            <div class="preset-tags"><span class="work-tag">#옆집</span><span class="work-tag">#순애</span><span class="work-tag">#일상</span></div>
+            <div class="preset-badge">
+              <span class="star">★</span><span>Herio</span>
+            </div>
+          </div>
+          <div class="fav-btn" onclick="toggleFav(event, 'https://hitomi.la/reader/2010261.html#1')">🤍</div>
+        </div></div>
+          
+          <div class="pager" id="pager" style="display: flex; justify-content: center; margin-top: 10px;">
+            <button class="pager-btn" id="prevPage" disabled="">이전</button>
+            <span class="pager-info" id="pageInfo" style="margin: 0 15px;">1 / 42</span>
+            <button class="pager-btn" id="nextPage">다음</button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <div class="social-links">
+      <a href="https://youtube.com/@sabukaru91?si=Y4-kajzHiSfpwi7c" target="_blank" class="social-icon youtube" aria-label="YouTube">▶</a>
+      <a href="https://www.instagram.com/gangho_dori91?igsh=MWg3MDNlbmJ3Njh1ag==" target="_blank" class="social-icon instagram" aria-label="Instagram">📸</a>
+      <a href="https://www.tiktok.com/@user8073876008830?_r=1&amp;_t=ZS-91pab55TG7M" target="_blank" class="social-icon tiktok" aria-label="TikTok">🎵</a>
+    </div>
+
+    <button class="share-btn" id="shareSiteBtn" type="button">📣 무림에 강호의 도리 전파하기 📣</button>
+  </div>
+
+  <div class="notice-overlay" id="saveModalOverlay" style="display:none; z-index:100005;">
+    <div class="notice-modal">
+      <div class="notice-title" style="color:#f59e0b; margin-bottom:8px; font-size:1.4rem;">⭐ 컬렉션 추가</div>
+      <div style="font-size:1rem; font-weight:800; color:#374151; margin-bottom:16px;">작품 번호: <span id="saveModalNum" style="color:#4f46e5; font-size:1.2rem;"></span></div>
+      
+      <input type="text" id="saveModalMemo" placeholder="메모 (예: 갓경, 금태양, 여사친)" style="width:100%; padding:12px; border-radius:10px; border:2px solid #e5e7eb; outline:none; font-size:0.95rem; margin-bottom:20px; font-weight:bold;">
+      
+      <div style="font-size:0.9rem; font-weight:bold; color:#4b5563; margin-bottom:10px;">이 작품의 평점을 매겨주세요!</div>
+      <div id="saveModalRating" style="display:flex; justify-content:center; gap:8px; font-size:2.5rem; margin-bottom:24px; cursor:pointer;">
+        <span class="rate-heart" data-val="1">🤍</span>
+        <span class="rate-heart" data-val="2">🤍</span>
+        <span class="rate-heart" data-val="3">🤍</span>
+        <span class="rate-heart" data-val="4">🤍</span>
+        <span class="rate-heart" data-val="5">🤍</span>
+      </div>
+      
+      <div class="notice-actions">
+        <button class="notice-btn btn-secondary" id="saveModalCancelBtn" type="button">취소</button>
+        <button class="notice-btn" id="saveModalConfirmBtn" type="button" style="background: linear-gradient(135deg, #f59e0b, #d97706); box-shadow: 0 6px 16px rgba(245, 158, 11, 0.35);">저장 완료</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="notice-overlay" id="adminNoticeModalOverlay" style="display:none; z-index:100006;">
+    <div class="notice-modal" style="background: #0f172a; border: 1px solid #334155;">
+      <div class="notice-icon">📢</div>
+      <div class="notice-title" style="color:#f59e0b; margin-bottom: 12px;">운영자 공지 (NEW)</div>
+      <div class="notice-body" style="text-align: left; background:#1e293b; padding:15px; border-radius:10px; color:#e5e7eb; font-size:0.9rem; line-height:1.6; border:1px solid #475569; margin-bottom: 16px;">
+        <p style="color:#fcd34d; font-weight:900; margin-top:0; font-size:1rem;">[중요 업데이트 안내]</p>
+        1. 화면 안내 문구를 정리해 <b>인터페이스를 간소화</b>했습니다.<br><br>
+        2. 추천작에 <b>태그 시스템</b>을 넣었습니다. 태그를 고르거나 검색하면 해당 작품만 볼 수 있습니다.<br><br>
+        3. <b>최근 기록</b> 탭을 추가했습니다. 본 추천작이 최신순으로 쌓입니다.<br><br>
+        4. 추천작에 <b>신작이 추가</b>되었습니다. 앞번호로 바로 찾아보세요.<br><br>
+        항상 강호의 도리를 애용해주셔서 감사합니다!😎
+      </div>
+      <div class="notice-actions">
+        <button class="notice-btn" id="adminNoticeConfirmBtn" type="button" style="background: linear-gradient(135deg, #f59e0b, #d97706); box-shadow: 0 6px 16px rgba(245, 158, 11, 0.35);">확인 (24시간 동안 안 보기)</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="notice-overlay" id="noticeOverlay">
+    <div class="notice-modal">
+      <div class="notice-icon">⚠️</div>
+      <div class="notice-title">인스타 / 틱톡 접속자 필독</div>
+      <div class="notice-body">
+        <p class="highlight-text">현재 인앱 브라우저로 접속하셨나요?</p>
+        <div class="instruction-box">
+          • 인스타/틱톡 내장 브라우저에서는 <b>작품 링크 이동 및 앱 설치가 차단</b>되는 심각한 오류가 발생합니다!<br><br>
+          • 우측 상단 <b>더보기(⋮ 또는 ⋯)</b> 버튼을 누른 뒤<br>
+          • 반드시 <b>'다른 브라우저로 열기'</b> 또는 <b>'크롬/사파리로 열기'</b>를 선택해서 다시 접속해주세요!
+        </div>
+      </div>
+      <div class="notice-actions">
+        <button class="notice-btn" id="noticeOkBtn" type="button">확인했습니다</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="notice-overlay" id="installModalOverlay">
+    <div class="notice-modal">
+      <div class="notice-icon">📱</div>
+      <div class="notice-title">앱으로 더 편하게 즐기세요!</div>
+      <div class="notice-body">
+        <p class="highlight-text" style="color: #e11d48; font-size: 1rem;">앱으로 설치하면 <b>더 빠르고 편하게</b> 이용할 수 있습니다!</p>
+        <p style="text-align:center; font-weight:700; margin-bottom:12px; font-size:0.9rem; color:#374151;">앱을 설치하고 <b>VIP 전용 혜택</b>을 누리세요👇</p>
+        
+        <div class="instruction-box" style="text-align: left; background: #fffbeb; border-color: #fde68a; color: #b45309; padding: 16px;">
+          <div style="font-size: 1rem; margin-bottom:10px; text-align: center;">🎁 <b>[앱 설치 VIP 특별 혜택]</b></div>
+          <div style="margin-bottom:8px;"><b>1. 원터치 실행:</b> 바탕화면에서 즉시 접속!</div>
+          <div style="margin-bottom:8px;"><b>2. 철통 보안:</b> 누구도 못보게 <b>앱 잠금(비밀번호)</b> 지원!</div>
+          <div><b>3. 데이터 유지:</b> 컬렉션·최근검색이 더 안정적으로 보관됩니다.</div>
+        </div>
+        
+        <p class="server-warning" style="background: transparent; color: #ef4444; font-size: 0.8rem; font-weight: bold; margin-top:-5px;">
+          🚨 주의: 인스타/틱톡 앱 내에서는 설치가 불가능합니다. 반드시 크롬/사파리 등 외부 브라우저로 다시 접속 후 설치해주세요!
+        </p>
+      </div>
+      <div class="notice-actions">
+        <button class="notice-btn btn-secondary" id="installLaterBtn" type="button">나중에</button>
+        <button class="notice-btn" id="installConfirmBtn" type="button" style="background: linear-gradient(135deg, #f59e0b, #d97706); box-shadow: 0 6px 16px rgba(245, 158, 11, 0.35);">앱 설치하기</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 🚨 여기서 복구된 통계(GA) 로그 전송 함수!
+    function logGAEvent(eventName, params) {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, params || {});
+      }
+    }
+
+    const SITES = [
+      { id: "hitomi-reader",   name: "Hitomi Reader",   pattern: "https://hitomi.la/reader/{num}.html" },
+      { id: "hitomi-galleries",name: "Hitomi Galleries",pattern: "https://hitomi.la/galleries/{num}.html" },
+      { id: "custom-base",     name: "직접 지정 (기본 Hitomi Reader)", pattern: "https://hitomi.la/reader/{num}.html" }
+    ];
+
+    const PRESETS = [
+      { label: "206. 이웃집여자가 꼬시는 만화(6편)", img: "https://i.postimg.cc/6p7kPCnS/206.jpg", badge: "Herio", link: "https://hitomi.la/reader/4190800.html#1", tags: ["옆집", "순애", "일상"] },
+      { label: "205. 이웃집여자가 꼬시는 만화(5편)", img: "https://i.postimg.cc/9Q46kyZK/205.jpg", badge: "Herio", link: "https://hitomi.la/reader/3179153.html#1", tags: ["옆집", "순애", "일상"] },
+      { label: "204. 이웃집여자가 꼬시는 만화(4편)", img: "https://i.postimg.cc/7ZCFRS0F/204.jpg", badge: "Herio", link: "https://hitomi.la/reader/2781244.html#1", tags: ["옆집", "순애", "일상"] },
+      { label: "203. 이웃집여자가 꼬시는 만화(3편)", img: "https://i.postimg.cc/mgcvn7C0/203.jpg", badge: "Herio", link: "https://hitomi.la/reader/2304181.html#1", tags: ["옆집", "순애", "일상"] },
+      { label: "202. 이웃집여자가 꼬시는 만화(2편)", img: "https://i.postimg.cc/qv9PHgxQ/202.jpg", badge: "Herio", link: "https://hitomi.la/reader/2010261.html#1", tags: ["옆집", "순애", "일상"] },
+      { label: "201. 이웃집여자가 꼬시는 만화(1편)", img: "https://i.postimg.cc/SxwBbjfg/201.jpg", badge: "Herio", link: "https://hitomi.la/reader/1545826.html#1", tags: ["옆집", "순애", "일상"] },
+      { label: "200. 도S 아가씨와 우연히 만난 만화", img: "https://i.postimg.cc/wjSCY3Qb/200.jpg", badge: "Kitaku", link: "https://hitomi.la/reader/3965551.html#1", tags: ["순애", "거유", "일상"] },
+      { label: "199. 바니걸 후배와 하는 만화", img: "https://i.postimg.cc/zG9sY3Fc/199.jpg", badge: "Hoshii Nasake", link: "https://hitomi.la/reader/3964040.html#1", tags: ["선후배", "코스프레", "순애"] },
+      { label: "198. 바니걸 선배와 하는 만화", img: "https://i.postimg.cc/Z51Gz0xQ/198.jpg", badge: "Simao", link: "https://hitomi.la/reader/3854161.html#1", tags: ["선후배", "코스프레", "순애"] },
+      { label: "197. 주운 고양이가 갸루였던 만화", img: "https://i.postimg.cc/pLgwMyJ7/197.jpg", badge: "NAKAMO", link: "https://hitomi.la/reader/4203391.html#1", tags: ["순애", "판타지", "갸루"] },
+      { label: "196. 게임친구랑 사귀는 만화", img: "https://i.postimg.cc/dVzbcDjz/196.jpg", badge: "ramanda", link: "https://hitomi.la/reader/4132902.html#1", tags: ["여친", "순애", "일상"] },
+      { label: "195. 신입생 환영회에서 역헌팅 당하는 만화", img: "https://i.postimg.cc/y8wMCWyM/195.jpg", badge: "ramanda", link: "https://hitomi.la/reader/4138848.html#1", tags: ["학교", "순애"] },
+      { label: "194. 소꿉친구와 사귀는 만화(2편)", img: "https://i.postimg.cc/6pDkxThs/194.jpg", badge: "chacharan", link: "https://hitomi.la/reader/3760938.html#1", tags: ["소꿉친구", "여친", "순애"] },
+      { label: "193. 소꿉친구와 사귀는 만화(1편)", img: "https://i.postimg.cc/rwvB2z9X/193.jpg", badge: "chacharan", link: "https://hitomi.la/reader/3543682.html#1", tags: ["소꿉친구", "여친", "순애"] },
+      { label: "192. 멋대로 눌러 앉은 유령이랑 하는 만화(3편)", img: "https://i.postimg.cc/9Mw3Xk78/192.jpg", badge: "Izure", link: "https://hitomi.la/reader/3419120.html#1", tags: ["순애", "거유", "일상"] },
+      { label: "191. 멋대로 눌러 앉은 유령이랑 하는 만화(2편)", img: "https://i.postimg.cc/CKQTg0zr/191.jpg", badge: "Izure", link: "https://hitomi.la/reader/3172801.html#1", tags: ["순애", "거유", "일상"] },
+      { label: "190. 멋대로 눌러 앉은 유령이랑 하는 만화(1편)", img: "https://i.postimg.cc/3wc5Thdc/190.jpg", badge: "Izure", link: "https://hitomi.la/reader/2900756.html#1", tags: ["순애", "거유", "일상"] },
+      { label: "189. 가출한 가루를 집에 초대한 만화(3편)", img: "https://i.postimg.cc/rpPXkTKn/189.jpg", badge: "Izure", link: "https://hitomi.la/reader/2994588.html#1", tags: ["하렘", "거유", "학교"] },
+      { label: "188. 가출한 가루를 집에 초대한 만화(2편)", img: "https://i.postimg.cc/HLhDgmVS/188.jpg", badge: "Izure", link: "https://hitomi.la/reader/2831690.html#1", tags: ["하렘", "거유", "학교"] },
+      { label: "187. 가출한 가루를 집에 초대한 만화(1편)", img: "https://i.postimg.cc/1zjhQSfK/187.jpg", badge: "Izure", link: "https://hitomi.la/reader/2829868.html#1", tags: ["하렘", "거유", "학교"] },
+      { label: "186. 츤데레 소꿉친구 만화", img: "https://i.postimg.cc/6QmJXKyV/186.jpg", badge: "yakitomato", link: "https://hitomi.la/reader/2687480.html#1", tags: ["순애", "학교", "소꿉친구"] },
+      { label: "185. 소녀를 가지고 굴려먹다 버리는 만화", img: "https://i.postimg.cc/W4HLvVhr/185.jpg", badge: "asakai mocchinu", link: "https://hitomi.la/reader/1847589.html#1", tags: ["학교", "일진", "무표정"] },
+      { label: "184. 여자들만 있는 합숙에 참여한 만화", img: "https://i.postimg.cc/cJbySWrw/184.jpg", badge: "Sakatami", link: "https://hitomi.la/reader/2152106.html#1", tags: ["하렘", "선후배", "학교"] },
+      { label: "183. 내가 좋아하던 마법소녀가 새엄마가된 만화(2편)", img: "https://i.postimg.cc/bvBchPsD/183.jpg", badge: "Zhen Lu", link: "https://hitomi.la/reader/3969421.html#1", tags: ["유부녀", "거유", "학교", "가족"] },
+      { label: "182. 내가 좋아하던 마법소녀가 새엄마가된 만화(1편)", img: "https://i.postimg.cc/pd6bHvpr/182.jpg", badge: "Zhen Lu", link: "https://hitomi.la/reader/3645210.html#1", tags: ["유부녀", "거유", "학교", "가족"] },
+      { label: "181. 마법소녀의 부작용을 치료하는 만화(2편)", img: "https://i.postimg.cc/8C0QSGj7/181.jpg", badge: "Zhen Lu", link: "https://hitomi.la/reader/3306856.html#1", tags: ["순애", "거유", "학교", "판타지"] },
+      { label: "180. 마법소녀의 부작용을 치료하는 만화(1편)", img: "https://i.postimg.cc/PqRsjHPx/180.jpg", badge: "Zhen Lu", link: "https://hitomi.la/reader/3072647.html#1", tags: ["순애", "거유", "학교", "판타지"] },
+      { label: "179. 여우신이 집에 얹혀살게된 만화", img: "https://i.postimg.cc/xdCDh8Tf/179.jpg", badge: "Fukurou", link: "https://hitomi.la/reader/3547222.html#1", tags: ["순애", "거유", "일상", "판타지"] },
+      { label: "178. 어른들의 여유가 넘치는 만화", img: "https://i.postimg.cc/ZnZ2GjT4/2144kaebcheo.jpg", badge: "bekotarou", link: "https://hitomi.la/reader/4113439.html#1", tags: ["순애", "직장", "누나"] },
+      { label: "177. 거대모녀에게 짜이는 만화", img: "https://i.postimg.cc/rsN2LCcJ/177.png", badge: "미상", link: "https://hitomi.la/reader/4189280.html#1", tags: ["하렘", "학교", "유부녀"] },
+      { label: "176. 같은반 아싸녀랑 하게된 만화", img: "https://i.postimg.cc/j24YrQKD/176.png", badge: "Ksyum", link: "https://hitomi.la/reader/4188199.html#1", tags: ["순애", "학교", "무표정"] },
+      { label: "175. 빵빵한 자매랑 즐기는 만화(2편)", img: "https://i.postimg.cc/yxyCzXBX/175.png", badge: "Rouka", link: "https://hitomi.la/reader/3445614.html#1", tags: ["하렘", "거유", "무표정"] },
+      { label: "174. 빵빵한 자매랑 즐기는 만화(1편)", img: "https://i.postimg.cc/ZnxzhFZj/174.png", badge: "Rouka", link: "https://hitomi.la/reader/3242004.html#1", tags: ["하렘", "거유", "무표정"] },
+      { label: "173. 갸루가 된 소꿉친구와 하는 만화", img: "https://i.postimg.cc/Fz4XqntH/173.png", badge: "mikage", link: "https://hitomi.la/reader/3893565.html#1", tags: ["순애", "소꿉친구", "갸루"] },
+      { label: "172. 내가 좋아하는 에로방송인이 엄친딸이였던 만화(3편)", img: "https://i.postimg.cc/65BNfSLC/172.png", badge: "morimiya masayuki", link: "https://hitomi.la/reader/3996778.html#1", tags: ["순애", "거유", "일상"] },
+      { label: "171. 내가 좋아하는 에로방송인이 엄친딸이였던 만화(2편)", img: "https://i.postimg.cc/rFqLNbCt/171.png", badge: "morimiya masayuki", link: "https://hitomi.la/reader/3523753.html#1", tags: ["순애", "거유", "일상"] },
+      { label: "170. 내가 좋아하는 에로방송인이 엄친딸이였던 만화(1편)", img: "https://i.postimg.cc/NG6cTYTK/170.png", badge: "morimiya masayuki", link: "https://hitomi.la/reader/3308780.html#1", tags: ["순애", "거유", "일상"] },
+      { label: "169. 반장이랑 서로 자위하게된 만화", img: "https://i.postimg.cc/x83VSyY6/169.png", badge: "Mmchair", link: "https://hitomi.la/reader/3886806.html#1", tags: ["순애", "학교", "여사친"] },
+      { label: "168. 이것이 바로 순애다", img: "https://i.postimg.cc/BnMFZ198/215112.jpg", badge: "sorai shinya", link: "https://hitomi.la/reader/2247861.html#1", tags: ["순애", "여친", "일상"] },
+      { label: "167. 동창회에서 짝사랑을 만난 만화", img: "https://i.postimg.cc/c4tYxz91/2ff111.jpg.jpg", badge: "danimaru", link: "https://hitomi.la/reader/3001282.html#1", tags: ["순애", "거유", "일상", "여사친"] },
+      { label: "166. 퇴마의 방법이 독특한 만화", img: "https://i.postimg.cc/jj7kyvd9/2F2221.jpg", badge: "danimaru", link: "https://hitomi.la/reader/1634081.html#1", tags: ["순애", "거유", "판타지"] },
+      { label: "165. 문란한 풍기 위원장", img: "https://i.postimg.cc/Y0K71h7c/125111.jpg", badge: "poriuretan", link: "https://hitomi.la/reader/3893397.html#1", tags: ["학교", "거유", "여사친"] },
+      { label: "164. 지구 종말을 맞이하는 만화", img: "https://i.postimg.cc/kD30tZx9/kaeb211cheo.jpg", badge: "yonayona", link: "https://hitomi.la/reader/4176061.html#1", tags: ["순애", "가족"] },
+      { label: "163. 남동생을 교환하는 만화", img: "https://i.postimg.cc/4NVHnJQ8/seukeulinsyas-2026-09-09-215216.png", badge: "wakamatsu", link: "https://hitomi.la/reader/3886872.html#1", tags: ["누나", "가족"] },
+      { label: "162. 전 ㅅㅍ와 매칭되어버렸다", img: "https://i.postimg.cc/rs53R0my/seukeulinsyas-2026-09-09-214441.png", badge: "danimaru", link: "https://hitomi.la/reader/4132492.html#1", tags: ["순애", "거유", "일상"] },
+      { label: "161. 그녀가 인기 작가인 이유", img: "https://i.postimg.cc/1zPxGK6z/seukeulinsyas-2026-09-09-214045.png", badge: "momokumo", link: "https://hitomi.la/reader/4002121.html#1", tags: ["순애", "거유", "일상"] },
+      { label: "160. 요오오오망한 사촌 동생", img: "https://i.postimg.cc/m2Xh6tVZ/seukeulinsyas-2026-09-09-213803.png", badge: "kakao", link: "https://hitomi.la/reader/3241956.html#1", tags: ["순애", "가족"] },
+      { label: "159. 옆자리 친구 정복하는 만화", img: "https://i.postimg.cc/bvKtVsyS/0001.png", badge: "kakao", link: "https://hitomi.la/reader/4091223.html#1", tags: ["순애", "학교", "여사친"] },
+      { label: "158. 절대복종 왕게임", img: "https://i.postimg.cc/1tcKkn8S/004.jpg", badge: "poriuretan", link: "https://hitomi.la/reader/3022104.html#1", tags: ["거유", "일상"] },
+      { label: "157. 나를 위해 갸루가 된 소꿉친구", img: "https://i.postimg.cc/rsV9MV4T/Gemini-Generated-Image-kya94kkya94kkya9.png", badge: "poriuretan", link: "https://hitomi.la/reader/2701262.html#1", tags: ["순애", "소꿉친구", "갸루"] },
+      { label: "156. 절대 그럴리가 없는 소꿉친구", img: "https://i.postimg.cc/FzrxNrSm/Gemini-Generated-Image-ymiuyjymiuyjymiu.png", badge: "poriuretan", link: "https://hitomi.la/reader/2025297.html#1", tags: ["소꿉친구", "학교", "NTR"] },
+      { label: "155. 점장님과 한판 뜨는 만화", img: "https://i.postimg.cc/k4dcYFXR/0001.jpg", badge: "kakao", link: "https://hitomi.la/reader/3397530.html#1", tags: ["순애", "직장"] },
+      { label: "154. 여친이 너무나 터프한 만화", img: "https://i.postimg.cc/zX4S4rNq/155111.jpg", badge: "mushi", link: "https://hitomi.la/reader/1582403.html#1", tags: ["순애", "여친"] },
+      { label: "153. 남자들 등쳐먹다 먹히는 만화", img: "https://i.postimg.cc/RFxYmtzq/f111.jpg", badge: "onkyu", link: "https://hitomi.la/reader/3323957.html#1", tags: ["갸루", "거유", "일상"] },
+      { label: "152. 나만보면 눈빛이 바뀌는 누나", img: "https://i.postimg.cc/Gpw8x3Cx/14442.jpg", badge: "danimaru", link: "https://hitomi.la/reader/1751977.html#1", tags: ["누나", "일상"] },
+      { label: "151. 멍멍이 그녀", img: "https://i.postimg.cc/5th3vWPG/Kakao-Talk-20260509-132555939-01.png", badge: "danimaru", link: "https://hitomi.la/reader/1781358.html#1", tags: ["순애", "여친", "일상"] },
+      { label: "150. 누가봐도 여친 없을 상", img: "https://i.postimg.cc/pdwZ8M04/Kakao-Talk-20260509-132555939.png", badge: "minami fumika", link: "https://hitomi.la/reader/3320025.html#1", tags: ["순애", "누나", "소꿉친구"] },
+      { label: "149. 아버지가 재혼 후 세상을 떠나셨다(2편)", img: "https://i.postimg.cc/Hnzhj2yC/2222.jpg", badge: "sori", link: "https://hitomi.la/reader/3281962.html#1", tags: ["가족", "하렘", "일상"] },
+      { label: "148. 아버지가 재혼 후 세상을 떠나셨다(1편)", img: "https://i.postimg.cc/VvgV5RC8/11111.jpg", badge: "sori", link: "https://hitomi.la/reader/3049141.html#1", tags: ["가족", "하렘", "일상"] },
+      { label: "147. 좋은건 함께하라고 배웠습니다", img: "https://i.postimg.cc/267hPttX/25111.jpg", badge: "sori", link: "https://hitomi.la/reader/2947216.html#1", tags: ["학교", "하렘", "일상"] },
+      { label: "146. 세상에서 제일 부러운 빵셔틀", img: "https://i.postimg.cc/3wbZtVPt/006.jpg", badge: "sori", link: "https://hitomi.la/reader/2121106.html#1", tags: ["학교", "하렘", "일상"] },
+      { label: "145. 연인들의 흔한 스킨십 4단계", img: "https://i.postimg.cc/8k334qpH/kaeb112cheo.jpg", badge: "fake enn", link: "https://hitomi.la/reader/2933425.html#1", tags: ["순애", "여친", "판타지"] },
+      { label: "144. 익명의 매니저가 존잘남이었다", img: "https://i.postimg.cc/hjWzc09k/Gemini-Generated-Image-r5e85hr5e85hr5e8.png", badge: "sajipen", link: "https://hitomi.la/reader/2592610.html#1", tags: ["직장", "거유"] },
+      { label: "143. 공과사의 구분이 너무 확실하다", img: "https://i.postimg.cc/8Pg9hGRb/Gemini-Generated-Image-wlymrawlymrawlym.png", badge: "tel", link: "https://hitomi.la/reader/2958889.html#1", tags: ["순애", "거유", "직장"] },
+      { label: "142. 선진국의 필수 교육과정", img: "https://i.postimg.cc/RFSvptjF/hwamyeon-kaebcheo-2026-04-24-000214.png", badge: "sakai", link: "https://hitomi.la/reader/3505196.html#1", tags: ["하렘", "학교", "판타지"] },
+      { label: "141. 절대 끝나지 않는 과외", img: "https://i.postimg.cc/LshTtQ8c/Gemini-Generated-Image-lcutazlcutazlcut.png", badge: "enokido", link: "https://hitomi.la/reader/3693632.html#1", tags: ["순애", "일상"] },
+      { label: "140. 연기가 현실이 되어버린 만화", img: "https://i.postimg.cc/659FCHv2/Screenshot-20260421-012234-Chrome.jpg", badge: "jury", link: "https://hitomi.la/reader/3591205.html#1", tags: ["순애", "직장"] },
+      { label: "139. 연상녀를 만나 건강해지는 만화", img: "https://i.postimg.cc/ZRdwhNvp/Screenshot-20260421-011032-Chrome.jpg", badge: "wakamatsu", link: "https://hitomi.la/reader/3784065.html#1", tags: ["순애", "일상", "누나"] },
+      { label: "138. 세계 종말을 앞두고 솔직해지는 만화", img: "https://i.postimg.cc/J4nRc7fd/Screenshot-20260421-010423-Chrome.jpg", badge: "poriuretan", link: "https://hitomi.la/reader/3702797.html#1", tags: ["순애", "판타지"] },
+      { label: "137. 여사친과 공수교대 하는 만화", img: "https://i.postimg.cc/XNL43SbR/Screenshot-20260419-205004-Chrome.jpg", badge: "Kudaraji Hatsuka", link: "https://hitomi.la/reader/3225508.html#1", tags: ["순애", "학교", "여사친"] },
+      { label: "136. 금태양을 금태녀로 만든 만화", img: "https://i.postimg.cc/Ls3rDvJX/hwamyeon-kaebcheo-2026-04-15-003614.png", badge: "yonayona", link: "https://hitomi.la/reader/3888005.html#1", tags: ["NTR"] },
+      { label: "135. 수영부가 물이 아닌 다른곳에 빠진 만화", img: "https://i.postimg.cc/DzPt65Sw/hwamyeon-kaebcheo-2026-04-15-003406.png", badge: "enokido", link: "https://hitomi.la/reader/2648215.html#1", tags: ["학교", "거유", "수영복"] },
+      { label: "134. 명문고 학생의 뒷모습이 충격적인 만화", img: "https://i.postimg.cc/CKg3b9xf/hwamyeon-kaebcheo-2026-04-15-003347.png", badge: "danimaru", link: "https://hitomi.la/reader/2200575.html#1", tags: ["순애", "학교", "갸루"] },
+      { label: "133. 옆집 꼬마가 어느새 늠름해진 만화", img: "https://i.postimg.cc/wBVwcSF1/hwamyeon-kaebcheo-2026-04-09-220803.png", badge: "poriuretan", link: "https://hitomi.la/reader/3723022.html#1", tags: ["순애", "소꿉친구", "누나"] },
+      { label: "132. 항상 나를 기다려주는 후배가 귀여운 만화", img: "https://i.postimg.cc/3wBtCP90/hwamyeon-kaebcheo-2026-04-09-220348.png", badge: "senakagashiri", link: "https://hitomi.la/reader/2345323.html#1", tags: ["순애", "학교", "선후배"] },
+      { label: "131. 여친의 요구하는 생일선물이 특이한 만화", img: "https://i.postimg.cc/MGD9bhtj/hwamyeon-kaebcheo-2026-04-09-220053.png", badge: "kakei kei", link: "https://hitomi.la/reader/2840404.html#1", tags: ["여친"] },
+      { label: "130. 동네누나가 수명 늘려주는 만화(2편)", img: "https://i.postimg.cc/vBzwL13z/hwamyeon-kaebcheo-2026-04-06-231234.png", badge: "hinahara emi", link: "https://hitomi.la/reader/3747028.html#1", tags: ["누나"] },
+      { label: "129. 동네누나가 수명 늘려주는 만화(1편)", img: "https://i.postimg.cc/QtbZkB0q/hwamyeon-kaebcheo-2026-04-06-231304.png", badge: "hinahara emi", link: "https://hitomi.la/reader/3746136.html#1", tags: ["누나"] },
+      { label: "128. 의붓누나와 사이 좋은 만화", img: "https://i.postimg.cc/8czQy10h/hwamyeon-kaebcheo-2026-04-06-231154.png", badge: "oriue wato", link: "https://hitomi.la/reader/2292873.html#1", tags: ["누나", "가족"] },
+      { label: "127. 학생회장의 고충을 들어주는 만화", img: "https://i.postimg.cc/XJ86cZQL/hwamyeon-kaebcheo-2026-04-06-231212.png", badge: "momokumo", link: "https://hitomi.la/reader/3562061.html#1", tags: ["학교"] },
+      { label: "126. 동아리 선배의 개인 시간을 목격한 만화", img: "https://i.postimg.cc/KzNhrKJD/hwamyeon-kaebcheo-2026-04-06-231220.png", badge: "enokido", link: "https://hitomi.la/reader/1853407.html#1", tags: ["선후배"] },
+      { label: "125. 소꿉친구 명품백 사주는 만화", img: "https://i.postimg.cc/SRN4ygjy/44.jpg", badge: "mashiro shirako", link: "https://hitomi.la/reader/1543777.html#1", tags: ["소꿉친구"] },
+      { label: "124. 여친과 화해하는 만화", img: "https://i.postimg.cc/vTHyQ0DH/411.jpg.png", badge: "mashiro shirako", link: "https://hitomi.la/reader/1358166.html#1", tags: ["여친"] },
+      { label: "123. 소꿉친구 누나에게 어리광 부리는 만화", img: "https://i.postimg.cc/brNPzmdy/001.jpg", badge: "mashiro shirako", link: "https://hitomi.la/reader/2529588.html#1", tags: ["소꿉친구", "누나"] },
+      { label: "122. 여친의 철벽이 무너지는 만화", img: "https://i.postimg.cc/d3tFq5DQ/1.jpg", badge: "mashiro shirako", link: "https://hitomi.la/reader/2774552.html#4", tags: ["여친"] },
+      { label: "121. 게임에서 지면 소원을 들어주는 만화", img: "https://i.postimg.cc/4NZGgtNj/hwamyeon-kaebcheo-2026-04-01-030154.png", badge: "mashiro shirako", link: "https://hitomi.la/reader/2809073.html#1", tags: [] },
+      { label: "120. 귀신의 소원을 들어주는 만화", img: "https://i.postimg.cc/HWvD8Kpv/hwamyeon-kaebcheo-2026-03-30-130228.png", badge: "hinahara emi", link: "https://hitomi.la/reader/3084156.html#1", tags: [] },
+      { label: "119. 첫사랑 소꿉친구가 적극적인 만화", img: "https://i.postimg.cc/PfVsvctM/hwamyeon-kaebcheo-2026-04-01-025242.png", badge: "yoshio ereki", link: "https://hitomi.la/reader/3194056.html#1", tags: ["소꿉친구"] },
+      { label: "118. 첫사랑 누나가 집에 놀러온 만화", img: "https://i.postimg.cc/ZqG2KpL6/kaebcheo2.jpg", badge: "momokumo", link: "https://hitomi.la/reader/2853992.html#1", tags: ["누나"] },
+      { label: "117. 동경하는 형이 알고보니 누나였던 만화", img: "https://i.postimg.cc/bv7WNkRn/kaebcheo1.jpg", badge: "miyama", link: "https://hitomi.la/reader/2443031.html#1", tags: ["누나"] },
+      { label: "116. 오덕들에게 꿈과 희망 심어주는 만화", img: "https://i.postimg.cc/Pqg9rYMZ/kaebcheo.jpg", badge: "mashiro shirako", link: "https://hitomi.la/reader/3427134.html#1", tags: [] },
+      { label: "115. 전교 1,2등이 방과 후에 보충수업하는 만화", img: "https://i.postimg.cc/nh88Q6tW/a1.jpg", badge: "mashiro shirako", link: "https://hitomi.la/reader/3454311.html#1", tags: ["학교"] },
+      { label: "114. 쌍둥이에게 기습 당하는 만화", img: "https://i.postimg.cc/j5z3PDfT/hwamyeon-kaebcheo-2026-03-24-025050.png", badge: "danimaru", link: "https://hitomi.la/reader/1978865.html#1", tags: ["가족"] },
+      { label: "113. 메이드 카페에서 일진녀를 만난 만화", img: "https://i.postimg.cc/135BXWMz/sabon-z13.png", badge: "danimaru", link: "https://hitomi.la/reader/1991692.html#1", tags: ["학교", "일진", "코스프레"] },
+      { label: "112. 혼욕의 규칙을 확실하게 알려주는 만화", img: "https://i.postimg.cc/9MNJHyyr/hwamyeon-kaebcheo-2026-03-24-000441.png", badge: "hisasi", link: "https://hitomi.la/reader/1012767.html#1", tags: [] },
+      { label: "111. 존예 누나랑 데이트하는데 돈도 준다고?", img: "https://i.postimg.cc/SsKrSsVP/0001.png", badge: "danimaru", link: "https://hitomi.la/reader/2894011.html#1", tags: ["누나"] },
+      { label: "110. 서로 좋아하는데 둘다 눈치가 없다", img: "https://i.postimg.cc/qR7LJRQY/01.png", badge: "danimaru", link: "https://hitomi.la/reader/3364709.html#1", tags: [] },
+      { label: "109. 첫사랑 동네누나가 굉장히 대담하다", img: "https://i.postimg.cc/RF0RSFGP/1.png", badge: "fue", link: "https://hitomi.la/reader/1423201.html#1", tags: ["누나"] },
+      { label: "108. 티격태격하던 남녀가 선을 넘어버린 만화", img: "https://i.postimg.cc/J4MMzWs8/1F.png", badge: "danimaru", link: "https://hitomi.la/reader/3237026.html#1", tags: [] },
+      { label: "107. 짝사랑녀와 집에서 더블 데이트 하는 만화", img: "https://i.postimg.cc/xjkvtkn4/1rf1.jpg", badge: "pirates cat", link: "https://hitomi.la/reader/3817354.html#1", tags: [] },
+      { label: "106. 누나 친구와 게임하는 만화", img: "https://i.postimg.cc/HsZVV5vd/4555.jpg", badge: "minagi koh", link: "https://hitomi.la/reader/3233859.html#1", tags: ["누나"] },
+      { label: "105. 후배와 함께 엘리베이터에 갇힌 만화", img: "https://i.postimg.cc/zXtVVW2q/0210.jpg", badge: "momokumo", link: "https://hitomi.la/reader/3761493.html#1", tags: ["선후배"] },
+      { label: "104. 서큐버스가 식사하는 만화", img: "https://i.postimg.cc/hGJM5GnL/a1.png", badge: "danimaru", link: "https://hitomi.la/reader/3230728.html#1", tags: [] },
+      { label: "103. 취한 후배가 솔직해지는 만화", img: "https://i.postimg.cc/XNwdMych/hwamyeon-kaebcheo-2026-03-10-022417.png", badge: "danimaru", link: "https://hitomi.la/reader/2368969.html#1", tags: ["선후배"] },
+      { label: "102. 무표정녀에게 고민상담 해주는 만화", img: "https://i.postimg.cc/tRhW0Vt8/hwamyeon-kaebcheo-2026-03-10-021255.png", badge: "hibietto", link: "https://hitomi.la/reader/3551496.html#1", tags: ["무표정"] },
+      { label: "101. 아이돌과 단둘이 식사하는 만화", img: "https://i.postimg.cc/MZyVkjbL/hwamyeon-kaebcheo-2026-03-10-020827.png", badge: "yd", link: "https://hitomi.la/reader/2786769.html#1", tags: [] },
+      { label: "100. 벌칙 고백했다가 진짜로 여친생긴 만화", img: "https://i.postimg.cc/SNqJFTDV/hwamyeon-kaebcheo-2026-03-10-015648.png", badge: "danimaru", link: "https://hitomi.la/reader/2081315.html#1", tags: ["여친"] },
+      { label: "099. 짝사랑 여사친에게 최면을 거는 만화", img: "https://i.postimg.cc/yYBk4Qvj/S01.png", badge: "hibietto", link: "https://hitomi.la/reader/3528792.html#1", tags: ["여사친", "최면"] },
+      { label: "098. 아이돌에게 무리한 부탁을 하는 만화", img: "https://i.postimg.cc/44pm0kbj/hwamyeon-kaebcheo-2026-03-10-014745.png", badge: "yd", link: "https://hitomi.la/reader/3173669.html#1", tags: [] },
+      { label: "097. 니즈를 정확하게 파악하는 선배와 데이트 하는 만화", img: "https://i.postimg.cc/76RPFWp6/ava.jpg", badge: "mashiro shirako", link: "https://hitomi.la/reader/2782279.html#1", tags: ["선후배"] },
+      { label: "096. 갸루 기숙사생에게 휘둘리는 만화", img: "https://i.postimg.cc/bJ5Y7BKr/zz1.jpg", badge: "cielo", link: "https://hitomi.la/reader/2758219.html#1", tags: ["하렘", "학교", "갸루"] },
+      { label: "095. 아싸가 인싸 여친과 공원 놀러가는 만화", img: "https://i.postimg.cc/gJ7cCTf2/z111.jpg", badge: "mashiro shirako", link: "https://hitomi.la/reader/3192852.html#1", tags: ["여친"] },
+      { label: "094. (전)제자가 여자친구가 되는 만화", img: "https://i.postimg.cc/gJV35d7p/1ff.jpg", badge: "mashiro shirako", link: "https://hitomi.la/reader/2412379.html#1", tags: ["여친", "학교"] },
+      { label: "093. 사장님 딸에게 붙잡혀버린 만화", img: "https://i.postimg.cc/wvGwq9VN/x155.jpg", badge: "daiji", link: "https://hitomi.la/reader/2502416.html#1", tags: ["직장"] },
+      { label: "092. 가정교사와 여러가지 연습하는 만화", img: "https://i.postimg.cc/tgmTDck2/1.jpg", badge: "bekotarou", link: "https://hitomi.la/reader/3413220.html#1", tags: ["학교"] },
+      { label: "091. 나를 찬 소꿉친구가 타임슬립된 만화", img: "https://i.postimg.cc/ryJbzc8h/g11.jpg", badge: "michiking", link: "https://hitomi.la/reader/3764040.html#1", tags: ["소꿉친구"] },
+      { label: "090. 여자친구의 질투가 극에 달한 만화", img: "https://i.postimg.cc/g0MvZMTy/616.jpg", badge: "tel", link: "https://hitomi.la/reader/2519674.html#1", tags: ["여친"] },
+      { label: "089. 화장실에서 친구 누나를 만나버린 만화", img: "https://i.postimg.cc/XYfGw2pJ/1551.jpg", badge: "momokumo", link: "https://hitomi.la/reader/3022297.html#1", tags: ["누나"] },
+      { label: "088. 회사 후배가 신경쓰이는 만화", img: "https://i.postimg.cc/zvJyvzGH/aa0.jpg", badge: "michiking", link: "https://hitomi.la/reader/3797487.html#1", tags: ["선후배", "직장"] },
+      { label: "087. 문예부 선배가 대단한 작가였던 만화", img: "https://i.postimg.cc/VL8R9nd7/000.jpg", badge: "momokumo", link: "https://hitomi.la/reader/2543035.html#1", tags: ["선후배"] },
+      { label: "086. 남자친구가 돌부처인 만화", img: "https://i.postimg.cc/2yjs3MR7/01.jpg", badge: "tel", link: "https://hitomi.la/reader/2566960.html#1", tags: [] },
+      { label: "085. 아내가 생일선물로 뭐든 들어주는 만화", img: "https://i.postimg.cc/8zRt0KVV/t1.jpg", badge: "onedoo", link: "https://hitomi.la/reader/3784771.html#1", tags: ["가족", "유부녀", "NTR"] },
+      { label: "084. 바람 맞았다가 눈 맞는 만화", img: "https://i.postimg.cc/m205q1z7/w1.jpg", badge: "tel", link: "https://hitomi.la/reader/2995094.html#1", tags: [] },
+      { label: "083. 학생회의 비밀을 알아버린 만화", img: "https://i.postimg.cc/vBgnpT6f/a10.jpg", badge: "michiking", link: "https://hitomi.la/reader/3030412.html#1", tags: ["학교"] },
+      { label: "082. 여자 기숙사의 사감이 된 만화", img: "https://i.postimg.cc/Jh3QsZ76/VV1.jpg", badge: "michiking", link: "https://hitomi.la/reader/3799972.html#1", tags: ["하렘", "학교"] },
+      { label: "081. 여친을 만지면 달아오르는 만화2", img: "https://i.postimg.cc/L52wqmMq/h1h.jpg", badge: "tsukako", link: "https://hitomi.la/reader/2933539.html#1", tags: ["여친"] },
+      { label: "080. 여친을 만지면 달아오르는 만화", img: "https://i.postimg.cc/zfffh18t/F125.jpg", badge: "tsukako", link: "https://hitomi.la/reader/2570703.html#1", tags: ["여친"] },
+      { label: "079. 옆집에 찾아갔다가 붙잡힌 만화", img: "https://i.postimg.cc/ZqrSLxLy/화면_캡처_2026_02_23_125632.png", badge: "kawasaki", link: "https://hitomi.la/reader/3082293.html#1", tags: ["옆집"] },
+      { label: "078. 여사친이 판타지 채워주는 만화", img: "https://i.postimg.cc/Fzj6Y2dX/bfff.jpg", badge: "tsukako", link: "https://hitomi.la/reader/3740726.html#1", tags: ["여사친"] },
+      { label: "077. 쿨한 여상사가 여친인 만화", img: "https://i.postimg.cc/hvbmzrK9/1f11.jpg", badge: "galvalume kouhan", link: "https://hitomi.la/reader/3781358.html#1", tags: ["여친", "직장"] },
+      { label: "076. 여사친이 집에 들이닥친 만화", img: "https://i.postimg.cc/fTn5V2fk/1ff2.jpg", badge: "galvalume kouhan", link: "https://hitomi.la/reader/3077809.html#1", tags: ["여사친"] },
+      { label: "075. 끝까지 참았더니 여친이 소원 들어주는 만화", img: "https://i.postimg.cc/LX5qPt8d/0222.jpg", badge: "tsukako", link: "https://hitomi.la/reader/2951072.html#1", tags: ["여친"] },
+      { label: "074. 중독된 용사를 해독해주는 만화", img: "https://i.postimg.cc/N0PvPmBp/22.jpg", badge: "tsukako", link: "https://hitomi.la/reader/3397916.html#1", tags: [] },
+      { label: "073. 여자친구와 간만 보는 만화", img: "https://i.postimg.cc/W18vgxyM/111.jpg", badge: "tsukako", link: "https://hitomi.la/reader/3275347.html#1", tags: ["여친"] },
+      { label: "072. 이상한 선배에게 잘못걸린 만화", img: "https://i.postimg.cc/RZYq2t1f/dff.jpg", badge: "takano tomohiro", link: "https://hitomi.la/reader/3769802.html#1", tags: ["선후배"] },
+      { label: "071. 사랑해주는 돌을 구매한 만화", img: "https://i.postimg.cc/5NvPX5yp/2ff.jpg", badge: "mmchair", link: "https://hitomi.la/reader/2521590.html#1", tags: [] },
+      { label: "070. 여친과 싸우고 후배에게 위로 받는 만화", img: "https://i.postimg.cc/5tvbCg9m/hwamyeon-kaebcheo-2026-02-18-042725.png", badge: "kawasaki", link: "https://hitomi.la/reader/3761040.html#1", tags: ["여친", "선후배"] },
+      { label: "069. 포인트를 모으면 뭐든지 할수 있는 만화(3편)", img: "https://i.postimg.cc/2SgNS9g3/vdf.jpg", badge: "minato yuu", link: "https://hitomi.la/reader/2933253.html#1", tags: [] },
+      { label: "068. 포인트를 모으면 뭐든지 할수 있는 만화(2편)", img: "https://i.postimg.cc/L5JJLb4B/1544.jpg", badge: "minato yuu", link: "https://hitomi.la/reader/2933303.html#1", tags: [] },
+      { label: "067. 포인트를 모으면 뭐든지 할수 있는 만화(1편)", img: "https://i.postimg.cc/Dy3jjkLh/cc.jpg", badge: "minato yuu", link: "https://hitomi.la/reader/2697154.html#1", tags: [] },
+      { label: "066. 여자친구의 이가 뾰족한 만화", img: "https://i.postimg.cc/Jz6WV247/1555.jpg", badge: "iwami yasoya", link: "https://hitomi.la/reader/2680594.html#1", tags: ["여친"] },
+      { label: "065. 소꿉친구 누나와 비 맞는 만화", img: "https://i.postimg.cc/Z51ycVtn/a1.jpg", badge: "kuromotokun", link: "https://hitomi.la/reader/3475745.html#1", tags: ["소꿉친구", "누나"] },
+      { label: "064. 일진 여사친 과외 해주는 만화", img: "https://i.postimg.cc/d3V0QxsZ/001.png", badge: "akahito", link: "https://hitomi.la/reader/1680298.html#1", tags: ["여사친", "학교", "일진"] },
+      { label: "063. 친구의 단골이 되는 만화", img: "https://i.postimg.cc/jSCk6d1s/01.png", badge: "akahito", link: "https://hitomi.la/reader/2162039.html#1", tags: [] },
+      { label: "062. 만취한 그녀와 힐링 체험", img: "https://i.postimg.cc/852vjTwP/v13.jpg", badge: "danimaru", link: "https://hitomi.la/reader/2441018.html#1", tags: [] },
+      { label: "061. 일진 여사친이 집에 놀러온 만화(4편)", img: "https://i.postimg.cc/VLcjtB1Q/12.jpg", badge: "enokido", link: "https://hitomi.la/reader/3544509.html#1", tags: ["여사친", "일진"] },
+      { label: "060. 일진 여사친과 바다에서 만난 만화(3편)", img: "https://i.postimg.cc/VLcjtB1Q/12.jpg", badge: "enokido", link: "https://hitomi.la/reader/3063363.html#1", tags: ["여사친", "일진"] },
+      { label: "059. 일진 여사친 집에 놀러간 만화(2편)", img: "https://i.postimg.cc/VLcjtB1Q/12.jpg", badge: "enokido", link: "https://hitomi.la/reader/2407722.html#1", tags: ["여사친", "일진"] },
+      { label: "058. 일진 여사친과 방과후에 남는 만화(1편)", img: "https://i.postimg.cc/VLcjtB1Q/12.jpg", badge: "enokido", link: "https://hitomi.la/reader/1963345.html#1", tags: ["여사친", "학교", "일진"] },
+      { label: "057. 옆집 꼬마와 게임하는 만화", img: "https://i.postimg.cc/9FdBFBpX/aff.jpg", badge: "mappa ninatta", link: "https://hitomi.la/reader/3682885.html#1", tags: ["옆집"] },
+      { label: "056. 남사친과 대결하는 만화", img: "https://i.postimg.cc/qBZhHkks/1.jpg", badge: "sanjuurou", link: "https://hitomi.la/reader/3384217.html#1", tags: [] },
+      { label: "055. 제자와 출장가는 만화", img: "https://i.postimg.cc/pXFhGrrh/ZZ3.jpg", badge: "reitou cafe terrace", link: "https://hitomi.la/reader/3701550.html#1", tags: ["학교"] },
+      { label: "054. 남사친에게 보답하는 만화", img: "https://i.postimg.cc/wTZ5Mny5/zz2.jpg", badge: "sanjuurou", link: "https://hitomi.la/reader/2779425.html#1", tags: [] },
+      { label: "053. 초 연하남과 데이트하는 만화", img: "https://i.postimg.cc/DZP5b5kb/vv1.jpg", badge: "sanjuurou", link: "https://hitomi.la/reader/2489256.html#1", tags: [] },
+      { label: "052. SNS에서 만난 여자의 정체가 충격적인 만화", img: "https://i.postimg.cc/d17Z8c8q/v1.jpg", badge: "oryou", link: "https://hitomi.la/reader/2644251.html#1", tags: [] },
+      { label: "051. 여사친과 노다가 하는 만화", img: "https://i.postimg.cc/QMNLgqw1/bgb.jpg", badge: "fuguta-ke", link: "https://hitomi.la/reader/3347874.html#1", tags: ["여사친"] },
+      { label: "050. 실연당한 여사친 위로해주는 만화", img: "https://i.postimg.cc/mZMDqXzx/k11.jpg", badge: "sanjuurou", link: "https://hitomi.la/reader/3691200.html#66", tags: ["여사친"] },
+      { label: "049. 택배 기사가 무언가 목격한 만화", img: "https://i.postimg.cc/mgtH1Znv/ga.jpg", badge: "sanjuurou", link: "https://hitomi.la/reader/3691200.html#41", tags: ["직장"] },
+      { label: "048. 여사친에게 공부 가르쳐 주는 만화", img: "https://i.postimg.cc/4ddN2hNW/hwamyeon-kaebcheo-2025-12-19-233015.png", badge: "wakamatsu", link: "https://hitomi.la/reader/1919976.html#1", tags: ["여사친"] },
+      { label: "047. 여학생 훔쳐보다 들킨 만화", img: "https://i.postimg.cc/xjzPRvfv/0012.jpg", badge: "sanjuurou", link: "https://hitomi.la/reader/3691200.html#5", tags: ["학교"] },
+      { label: "046. 아이돌이 연애하고 싶어하는 만화", img: "https://i.postimg.cc/hjFpF5hC/131.jpg", badge: "sanjuurou", link: "https://hitomi.la/reader/2104598.html#1", tags: [] },
+      { label: "045. 여사친이 술먹고 신호 보내는 만화", img: "https://i.postimg.cc/xC40GGZ5/151.jpg", badge: "gosaiji", link: "https://hitomi.la/reader/1971180.html#1", tags: ["여사친"] },
+      { label: "044. 가정교사 누나가 아이돌이었던 만화(2편)", img: "https://i.postimg.cc/3Rf91WYY/1231.jpg", badge: "pirates cat", link: "https://hitomi.la/reader/3645683.html#1", tags: ["누나", "학교"] },
+      { label: "043. 존예 누나가 가정교사 해주는 만화(1편)", img: "https://i.postimg.cc/zfbVCpHd/hwamyeon-kaebcheo-2025-12-15-205157.png", badge: "pirates cat", link: "https://hitomi.la/reader/3204490.html#1", tags: ["누나", "학교"] },
+      { label: "042. 기죽은 야구선수를 위로해주는 만화", img: "https://i.postimg.cc/KjNX3SZw/hwamyeon-kaebcheo-2025-12-15-204419.png", badge: "wakamatsu", link: "https://hitomi.la/reader/1690873.html#1", tags: ["학교"] },
+      { label: "041. 갸루녀가 오타쿠에게 부탁하는 만화", img: "https://i.postimg.cc/W3LdprW5/hwamyeon-kaebcheo-2025-12-15-201849.png", badge: "danimaru", link: "https://hitomi.la/reader/3550328.html#1", tags: ["갸루"] },
+      { label: "040. 인터넷 친구를 현실에서 만나는 만화", img: "https://i.postimg.cc/kgPJpkTb/kaebcheo.jpg", badge: "danimaru", link: "https://hitomi.la/reader/2816982.html#1", tags: [] },
+      { label: "039. 퇴근하다 갑자기 전여친이 나타난 만화", img: "https://i.postimg.cc/QCgBD98M/003.jpg", badge: "fuguta-ke", link: "https://hitomi.la/reader/2618568.html#150", tags: ["여친", "직장"] },
+      { label: "038. 뜬금없이 고백했는데 성공한 만화", img: "https://i.postimg.cc/G2y8Mg6H/00102.jpg", badge: "fuguta-ke", link: "https://hitomi.la/reader/2618568.html#108", tags: [] },
+      { label: "037. 인터넷 여친과 실제로 만난 만화", img: "https://i.postimg.cc/JzrX1qBW/0011.jpg", badge: "fuguta-ke", link: "https://hitomi.la/reader/2618568.html#6", tags: ["여친"] },
+      { label: "036. 학교 여신에게 들켜버린 만화", img: "https://i.postimg.cc/HsGYK6r2/hwamyeon-kaebcheo-2025-12-11-004955.png", badge: "pirates cat", link: "https://hitomi.la/reader/3035657.html#1", tags: ["학교"] },
+      { label: "035. 여사친과 하교하는 만화", img: "https://i.postimg.cc/sfbxzVNL/hwamyeon-kaebcheo-2025-12-11-003646.png", badge: "wakamatsu", link: "https://hitomi.la/reader/1569607.html#1", tags: ["여사친", "학교"] },
+      { label: "034. 친구 남친과 연애상담하는 만화", img: "https://i.postimg.cc/pTpVN7Qc/hwamyeon-kaebcheo-2025-12-11-003724.png", badge: "ayakawa riku", link: "https://hitomi.la/reader/1949385.html#1", tags: [] },
+      { label: "033. 무표정 그녀가 여친이 되는 만화", img: "https://i.postimg.cc/4NBt6Xcv/hwamyeon-kaebcheo-2025-12-09-222813.png", badge: "gosaiji", link: "https://hitomi.la/reader/2231665.html#1", tags: ["여친", "무표정"] },
+      { label: "032. 무표정 그녀와 친구가 되는 만화", img: "https://i.postimg.cc/NFtT4Mby/hwamyeon-kaebcheo-2025-12-09-222950.png", badge: "gosaiji", link: "https://hitomi.la/reader/2154234.html#1", tags: ["무표정"] },
+      { label: "031. 여사친이 여친과 헤어지게 만든 만화", img: "https://i.postimg.cc/DyJcCkwf/hwamyeon-kaebcheo-2025-12-09-213829.png", badge: "ushio kiyoshi", link: "https://hitomi.la/reader/3537321.html#1", tags: ["여친", "여사친"] },
+      { label: "030. 여친이 거절을 잘 못하는 만화", img: "https://i.postimg.cc/RhNwwp1W/hwamyeon-kaebcheo-2025-12-08-233551.png", badge: "kuromotokun", link: "https://hitomi.la/reader/3264821.html#1", tags: ["여친", "NTR"] },
+      { label: "029. 문 앞으로 무언가가 배송된 만화", img: "https://i.postimg.cc/RC883k9n/hwamyeon-kaebcheo-2025-12-08-232715.png", badge: "yonayona", link: "https://hitomi.la/reader/3351660.html#1", tags: [] },
+      { label: "028. 여학생에게 상담받는 만화", img: "https://i.postimg.cc/J0hTyQYp/화면_캡처_2025_12_08_231917.png", badge: "ayakawa riku", link: "https://hitomi.la/reader/3405802.html#168", tags: ["학교"] },
+      { label: "027. 여사친이 차이고 하소연 하는 만화", img: "https://i.postimg.cc/R0cp2hnT/화면_캡처_2025_12_08_231240.png", badge: "ayakawa riku", link: "https://hitomi.la/reader/3405802.html#117", tags: ["여사친", "NTR"] },
+      { label: "026. 여사친이 고백 받아서 질투하는 만화", img: "https://i.postimg.cc/L6njWFVN/12442.jpg", badge: "fuguta-ke", link: "https://hitomi.la/reader/2029531.html#1", tags: ["여사친"] },
+      { label: "025. 일진 여사친과 방과후에 단둘이 남는 만화(2편)", img: "https://i.postimg.cc/zBrNRNxC/1242.jpg", badge: "fuguta-ke", link: "https://hitomi.la/reader/3310094.html#1", tags: ["여사친", "학교", "일진"] },
+      { label: "024. 일진 여사친 집에 놀러간 만화(1편)", img: "https://i.postimg.cc/G3qYX5Pz/111.jpg", badge: "fuguta-ke", link: "https://hitomi.la/reader/3143339.html#1", tags: ["여사친", "일진"] },
+      { label: "023. 고고한 연상녀 정복하는 만화", img: "https://i.postimg.cc/3RRd9mqW/023.jpg", badge: "homunculus", link: "https://hitomi.la/reader/2179391.html#1", tags: [] },
+      { label: "022. 소꿉친구가 여자로 보이는 만화", img: "https://i.postimg.cc/gc4jsDWR/hwamyeon-kaebcheo-2025-12-05-005729.png", badge: "wakamatsu", link: "https://hitomi.la/reader/2698501.html#1", tags: ["소꿉친구"] },
+      { label: "021. 학교 최고의 미녀가 자본주의에 굴복한 만화", img: "https://i.postimg.cc/tJvcTfV5/hwamyeon-kaebcheo-2025-12-05-004642.png", badge: "ayakawa riku", link: "https://hitomi.la/reader/3405802.html#91", tags: ["학교"] },
+      { label: "020. 졸업하면 뭐든지 다 해준다는 만화", img: "https://i.postimg.cc/4xXfrSgV/hwamyeon-kaebcheo-2025-12-04-031209.png", badge: "gosaiji", link: "https://hitomi.la/reader/2516501.html#24", tags: ["학교"] },
+      { label: "019. 학교 나오면 뭐든지 다 해준다는 만화", img: "https://i.postimg.cc/jqvJgPPK/화면_캡처_2025_12_04_030636.png", badge: "gosaiji", link: "https://hitomi.la/reader/2516501.html#4", tags: ["학교"] },
+      { label: "018. 마음 넓은 여친이 아내가 되는 만화(외전)", img: "https://i.postimg.cc/xCznKy0Y/151.png", badge: "fuguta-ke", link: "https://hitomi.la/reader/3076483.html#1", tags: ["여친", "가족", "유부녀"] },
+      { label: "017. 마음 넓은 여사친이 여친이 되는 만화(3편)", img: "https://i.postimg.cc/DyYLZnYT/125.png", badge: "fuguta-ke", link: "https://hitomi.la/reader/2890233.html#1", tags: ["여친", "여사친"] },
+      { label: "016. 마음 넓은 여사친이 간호사가된 만화(2편)", img: "https://i.postimg.cc/nrWWTNT6/화면_캡처_2025_12_04_014258.png", badge: "fuguta-ke", link: "https://hitomi.la/reader/2852533.html#1", tags: ["여사친"] },
+      { label: "015. 마음 넓은 여사친과 공부하는 만화(1편)", img: "https://i.postimg.cc/6pgrHtrB/1546.png", badge: "fuguta-ke", link: "https://hitomi.la/reader/2616310.html#1", tags: ["여사친"] },
+      { label: "014. 여친이 너무 예뻐서 기죽는 만화", img: "https://i.postimg.cc/4x7HCWjQ/154.png", badge: "gosaiji", link: "https://hitomi.la/reader/2671412.html", tags: ["여친"] },
+      { label: "013. 소꿉친구가 뜬금없이 고백하는 만화", img: "https://i.postimg.cc/Hs69W7rw/1554.png", badge: "gosaiji", link: "https://hitomi.la/reader/3260506.html", tags: ["소꿉친구"] },
+      { label: "012. 온천에 제자가 찾아온 만화", img: "https://i.postimg.cc/fLPFNzyr/123456.jpg", badge: "oryou", link: "https://hitomi.la/reader/2993876.html#26", tags: ["학교", "온천"] },
+      { label: "011. 야근하는데 제자가 찾아온 만화", img: "https://i.postimg.cc/ydTdQGN4/12345.jpg", badge: "oryou", link: "https://hitomi.la/reader/2993876.html", tags: ["학교", "직장"] },
+      { label: "010. 청순한 반장과 친구가된 만화", img: "https://i.postimg.cc/NFfjX0DD/155112.jpg", badge: "oryou", link: "https://hitomi.la/reader/3440870.html", tags: ["학교"] },
+      { label: "009. 여친이 놀러왔는데 쓰러진 만화", img: "https://i.postimg.cc/rpcgkNqF/hwamyeon-kaebcheo-2025-11-30-115939.png", badge: "gosaiji", link: "https://hitomi.la/reader/2556453.html", tags: ["여친"] },
+      { label: "008. 옆자리 친구와 취향이 비슷한 만화", img: "https://i.postimg.cc/g2PS4WL9/hwamyeon-kaebcheo-2025-11-30-104135.png", badge: "fuguta-ke", link: "https://hitomi.la/reader/3594757.html", tags: [] },
+      { label: "007. 소꿉친구와 게임하다 여친생긴 만화", img: "https://i.postimg.cc/K4h1B4Wb/hwamyeon-kaebcheo-2025-11-30-104045.png", badge: "fuguta-ke", link: "https://hitomi.la/reader/3616222.html", tags: ["여친", "소꿉친구"] },
+      { label: "006. 여사친에게 즐거운 시간을 들켜버린 만화", img: "https://i.postimg.cc/0QNDy6TD/hwamyeon-kaebcheo-2025-11-30-103759.png", badge: "tsukako", link: "https://hitomi.la/reader/3625325.html", tags: ["여사친"] },
+      { label: "005. 존예 여사친과 영화보는 만화", img: "https://i.postimg.cc/L5ntNqvZ/화면_캡처_2025_11_30_103638.png", badge: "takano tomohiro", link: "https://hitomi.la/reader/3585435.html", tags: ["여사친"] },
+      { label: "004. 이론만 내세우는 후배와 퇴근하는 만화", img: "https://i.postimg.cc/zD027KDz/hwamyeon-kaebcheo-2025-11-30-103303.png", badge: "wakamatsu", link: "https://hitomi.la/reader/2132000.html", tags: ["선후배", "직장"] },
+      { label: "003. 갸루가된 소꿉친구가 집에 놀러온 만화", img: "https://i.postimg.cc/T3ysp16w/hwamyeon-kaebcheo-2025-11-30-103136.png", badge: "ayakawa riku", link: "https://hitomi.la/reader/3405802.html#33", tags: ["소꿉친구", "갸루"] },
+      { label: "002. 결혼 약속한 소꿉친구와 10년만에 만나는 만화", img: "https://i.postimg.cc/tg8pYwfW/hwamyeon-kaebcheo-2025-11-30-102750.png", badge: "taniguchi daisuke", link: "https://hitomi.la/reader/3635124.html", tags: ["소꿉친구", "NTR"] },
+      { label: "001. 처음보는 여자와 마지막을 함께하는 만화", img: "https://i.postimg.cc/BbV86MTn/hwamyeon-kaebcheo-2025-11-30-102001.png", badge: "yonayona", link: "https://hitomi.la/reader/3542485.html", tags: [] }
+    ];
+
+    const THEME_KEY       = "kango_theme_v1";
+    const FAV_KEY         = "kango_favorites_v1";
+    const PRESET_HISTORY_KEY = "kango_preset_history_v1";
+    const RECENT_KEY      = "kango_recents_v1";
+    const SAVE_NUM_KEY    = "kango_saved_nums_v1"; 
+    const ADMIN_NOTICE_KEY = "kango_admin_notice_v3";
+    const NOTICE_HIDE_KEY = "kango_notice_hide_until";
+    const MEMBER_GATE_KEY = "kango_member_gate_v1";
+    const PAGE_SIZE       = 5;
+
+    // ★ 멤버십 비밀번호: 회원에게 공유할 값을 여기만 바꾸면 됩니다.
+    // 이 값을 바꾸면 예전에 입장했던 기기도 다시 입력해야 합니다.
+    // ★ 비밀번호는 소스에 평문으로 두지 않습니다. SHA-256 해시만 비교합니다.
+    // 바꾸려면 콘솔에서:
+    // const s="ganghodori.v1:새비밀번호";
+    // crypto.subtle.digest("SHA-256", new TextEncoder().encode(s)).then(b=>console.log([...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("")));
+    const MEMBER_PASSWORD_SALT = "ganghodori.v1";
+    const MEMBER_PASSWORD_HASH = "495a9611cbf21fa3ef319c2ce13cb3a19e707602fe8d65e33bb0e8452a4d0c1f";
+
+    // ★ 가입 링크. 버튼마다 주소를 따로 넣으면 됩니다.
+    const YOUTUBE_MEMBERSHIP_URL = "https://www.youtube.com/channel/UCHhI3ogMoiWIRDpkw71zOOw/join";
+    const PATREON_MEMBERSHIP_URL = "https://www.patreon.com/cw/sabukaru/membership";
+    const SABUKARU_DISCORD_URL = "https://discord.gg/tqNfegeYHg";
+
+    // ★ 비밀번호 입장 후 열리는 광고 링크
+    const MEMBER_AD_URL = "https://link.coupang.com/a/hpTPfgBtPE";
+
+    const siteSelect     = document.getElementById("siteSelect");
+    const numberInput    = document.getElementById("numberInput");
+    const goButton       = document.getElementById("goButton");
+    const saveNumBtn     = document.getElementById("saveNumBtn"); 
+    const randomButton   = document.getElementById("randomButton");
+    const patternPreview = document.getElementById("patternPreview");
+    const presetList     = document.getElementById("presetList");
+    const themeToggle    = document.getElementById("themeToggle");
+    const presetSearch   = document.getElementById("presetSearch");
+    const authorSearch   = document.getElementById("authorSearch");
+    const pager          = document.getElementById("pager");
+    const prevPageBtn    = document.getElementById("prevPage");
+    const nextPageBtn    = document.getElementById("nextPage");
+    const pageInfo       = document.getElementById("pageInfo");
+    
+    const noticeOverlay  = document.getElementById("noticeOverlay");
+    const noticeOkBtn    = document.getElementById("noticeOkBtn");
+    const installModalOverlay = document.getElementById("installModalOverlay");
+    const installLaterBtn = document.getElementById("installLaterBtn");
+    const installConfirmBtn = document.getElementById("installConfirmBtn");
+    
+    const tabAll         = document.getElementById("tabAll");
+    const tabFav         = document.getElementById("tabFav");
+    const hlContainer    = document.getElementById("highlightContainer");
+    const recentContainer = document.getElementById("recentSearches");
+    const savedNumbersList = document.getElementById("savedNumbersList");
+    const shareSiteBtn   = document.getElementById("shareSiteBtn");
+
+    const adminNoticeBanner = document.getElementById('adminNoticeBanner');
+    const adminNoticeModalOverlay = document.getElementById('adminNoticeModalOverlay');
+    const adminNoticeConfirmBtn = document.getElementById('adminNoticeConfirmBtn');
+
+    let currentList = PRESETS.slice();
+    let currentPage = 1;
+    let currentTab  = 'all';
+    let favorites   = JSON.parse(localStorage.getItem(FAV_KEY) || "[]");
+    let presetHistory = JSON.parse(localStorage.getItem(PRESET_HISTORY_KEY) || "[]");
+
+    function rememberPreset(link) {
+      if (!link) return;
+      presetHistory = [link, ...presetHistory.filter(x => x !== link)].slice(0, 50);
+      localStorage.setItem(PRESET_HISTORY_KEY, JSON.stringify(presetHistory));
+      if (currentTab === 'recent') filterPresets(false);
+    }
+
+    window.openPreset = function(link) {
+      rememberPreset(link);
+      window.open(link, '_blank');
+    };
+    let savedNums   = JSON.parse(localStorage.getItem(SAVE_NUM_KEY) || "[]"); 
+    let isCollectionExpanded = true; 
+    let currentCollectionPage = 1; 
+    let currentRatingValue = 0; 
+    let deferredPrompt;
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').then(() => console.log('SW Registered'));
+    }
+    window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferredPrompt = e; });
+
+    function showInstallModal() { installModalOverlay.style.display = 'flex'; }
+    
+    if (installConfirmBtn) {
+      installConfirmBtn.onclick = () => {
+        logGAEvent('app_install_click', { location: 'install_modal' });
+        installModalOverlay.style.display = 'none';
+        if (deferredPrompt) {
+          deferredPrompt.prompt();
+          deferredPrompt.userChoice.then(() => { deferredPrompt = null; });
+        } else {
+          alert("현재 브라우저에서는 자동 설치를 지원하지 않습니다.\n아이폰은 하단의 [공유] ➞ [홈 화면에 추가]를 눌러주세요!");
+        }
+      };
+    }
+
+    if (installLaterBtn) {
+      installLaterBtn.onclick = () => {
+        logGAEvent('app_install_later', { location: 'install_modal' });
+        installModalOverlay.style.display = 'none';
+      };
+    }
+
+    if (noticeOkBtn) {
+      noticeOkBtn.onclick = () => {
+        logGAEvent('notice_ok_click');
+        if (noticeOverlay) noticeOverlay.style.display = "none";
+      };
+    }
+
+    if (adminNoticeConfirmBtn) {
+      adminNoticeConfirmBtn.onclick = () => {
+        if (adminNoticeModalOverlay) adminNoticeModalOverlay.style.display = 'none';
+        localStorage.setItem(ADMIN_NOTICE_KEY, Date.now() + (24 * 60 * 60 * 1000));
+      };
+    }
+
+    function applyTheme(mode) {
+      if (mode === "dark") { document.body.classList.add("dark"); themeToggle.innerHTML = "☀️ 라이트모드"; }
+      else { document.body.classList.remove("dark"); themeToggle.innerHTML = "🌙 다크모드"; }
+    }
+    function initTheme() { applyTheme(localStorage.getItem(THEME_KEY) || "dark"); }
+    function toggleTheme() {
+      const next = document.body.classList.contains("dark") ? "light" : "dark";
+      localStorage.setItem(THEME_KEY, next);
+      applyTheme(next);
+    }
+    if (themeToggle) themeToggle.onclick = toggleTheme;
+
+    function initSiteSelect() {
+      SITES.forEach(s => {
+        const opt = document.createElement("option");
+        opt.value = s.id;
+        opt.textContent = s.name;
+        siteSelect.appendChild(opt);
+      });
+      siteSelect.value = "hitomi-reader"; 
+    }
+
+    function getCurrentSite() { return SITES.find(s => s.id === siteSelect.value) || SITES[0]; }
+
+    function renderRecents() {
+      const recents = JSON.parse(localStorage.getItem(RECENT_KEY) || "[]");
+      if(recents.length === 0) { recentContainer.innerHTML = ""; return; }
+      let html = `<span style='color:#888; font-size:0.75rem; margin-right:4px;'>최근 검색: </span>`;
+      recents.forEach(num => {
+        html += `<span class="recent-tag" onclick="document.getElementById('numberInput').value='${num}'; document.getElementById('goButton').click();">${num}</span>`;
+      });
+      recentContainer.innerHTML = html;
+    }
+
+    function renderSavedNums() {
+      savedNumbersList.innerHTML = '';
+      if (savedNums.length === 0) return;
+      
+      const totalPages = Math.ceil(savedNums.length / PAGE_SIZE) || 1;
+      if (currentCollectionPage > totalPages) currentCollectionPage = totalPages;
+
+      let html = `<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; margin-top:14px; background: rgba(255, 215, 0, 0.1); padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(255, 215, 0, 0.3);">
+                    <div style="font-size:1.05rem; font-weight:900; color:#ffd700; text-shadow: 0 0 8px rgba(255,215,0,0.5); letter-spacing:-0.5px;">⭐ 나만의 컬렉션 (${savedNums.length})</div>
+                    <button onclick="toggleCollection()" style="background:#fffbeb; border:1px solid #fcd34d; font-size:0.75rem; color:#b45309; font-weight:800; cursor:pointer; padding: 4px 8px; border-radius: 999px;">${isCollectionExpanded ? '접기 ▲' : '펼치기 ▼'}</button>
+                  </div>`;
+      
+      html += `<div style="display: ${isCollectionExpanded ? 'flex' : 'none'}; flex-direction: column; gap: 6px;">`;
+      
+      const pageItems = savedNums.slice((currentCollectionPage - 1) * PAGE_SIZE, currentCollectionPage * PAGE_SIZE);
+      
+      pageItems.forEach((item, index) => {
+        const originalIndex = (currentCollectionPage - 1) * PAGE_SIZE + index;
+        
+        let ratingHearts = "";
+        const rating = item.rating || 0; 
+        for (let i = 1; i <= 5; i++) {
+          ratingHearts += i <= rating ? "💖" : "🤍";
+        }
+
+        html += `
+          <div class="saved-num-card" onclick="window.open(getCurrentSite().pattern.replace('{num}', encodeURIComponent('${item.num}')), '_blank');">
+            <div class="saved-num-info" style="flex:1; min-width:0; margin-right:8px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">
+              <span style="color:#d97706; font-weight:900; margin-right:4px;">#${item.num}</span>
+              <span class="saved-num-memo">${item.memo}</span>
+            </div>
+            <div style="font-size:0.75rem; display:flex; align-items:center; gap:2px; pointer-events:none; margin-right:8px;">
+              ${ratingHearts}
+            </div>
+            <button class="del-num-btn" onclick="event.stopPropagation(); deleteSavedNum(${originalIndex});">✖</button>
+          </div>
+        `;
+      });
+
+      if (totalPages > 1) {
+        html += `
+          <div class="pager" style="display: flex; justify-content: center; margin-top: 6px; margin-bottom: 4px;">
+            <button class="pager-btn" onclick="event.stopPropagation(); changeCollectionPage(-1)" ${currentCollectionPage === 1 ? 'disabled' : ''}>이전</button>
+            <span class="pager-info" style="margin: 0 15px;">${currentCollectionPage} / ${totalPages}</span>
+            <button class="pager-btn" onclick="event.stopPropagation(); changeCollectionPage(1)" ${currentCollectionPage === totalPages ? 'disabled' : ''}>다음</button>
+          </div>
+        `;
+      }
+
+      html += `</div>`;
+      savedNumbersList.innerHTML = html;
+    }
+
+    window.toggleCollection = function() {
+      isCollectionExpanded = !isCollectionExpanded;
+      renderSavedNums();
+    };
+
+    window.changeCollectionPage = function(delta) {
+      currentCollectionPage += delta;
+      renderSavedNums();
+    };
+
+    if (saveNumBtn) {
+      saveNumBtn.onclick = () => {
+        const num = numberInput.value.trim();
+        if (!num) { alert("저장할 작품의 번호를 먼저 입력하세요!"); return; }
+        if (savedNums.some(item => item.num === num)) { alert("이미 나만의 컬렉션에 저장된 번호입니다."); return; }
+        
+        document.getElementById('saveModalNum').textContent = num;
+        document.getElementById('saveModalMemo').value = '';
+        currentRatingValue = 0;
+        updateModalHearts();
+        
+        document.getElementById('saveModalOverlay').style.display = 'flex';
+      };
+    }
+
+    document.querySelectorAll('.rate-heart').forEach(el => {
+      el.onclick = (e) => {
+        currentRatingValue = parseInt(e.target.getAttribute('data-val'), 10);
+        updateModalHearts();
+      };
+    });
+
+    function updateModalHearts() {
+      document.querySelectorAll('.rate-heart').forEach(el => {
+        const val = parseInt(el.getAttribute('data-val'), 10);
+        el.textContent = val <= currentRatingValue ? "💖" : "🤍";
+      });
+    }
+
+    document.getElementById('saveModalCancelBtn').onclick = () => {
+      document.getElementById('saveModalOverlay').style.display = 'none';
+    };
+
+    document.getElementById('saveModalConfirmBtn').onclick = () => {
+      if (currentRatingValue === 0) {
+        alert("이 작품의 하트 평점을 매겨주세요!");
+        return;
+      }
+      
+      const num = document.getElementById('saveModalNum').textContent;
+      const memo = document.getElementById('saveModalMemo').value.trim() || "메모 없음";
+      
+      savedNums.push({ num: num, memo: memo, rating: currentRatingValue });
+      localStorage.setItem(SAVE_NUM_KEY, JSON.stringify(savedNums));
+      
+      currentCollectionPage = Math.ceil(savedNums.length / PAGE_SIZE); 
+      renderSavedNums();
+      
+      document.getElementById('saveModalOverlay').style.display = 'none';
+    };
+
+    window.deleteSavedNum = function(index) {
+      if(confirm("이 번호를 나만의 컬렉션에서 삭제하시겠습니까?")) {
+        savedNums.splice(index, 1);
+        localStorage.setItem(SAVE_NUM_KEY, JSON.stringify(savedNums));
+        
+        const totalPages = Math.ceil(savedNums.length / PAGE_SIZE) || 1;
+        if (currentCollectionPage > totalPages) currentCollectionPage = totalPages;
+        
+        renderSavedNums();
+      }
+    };
+
+    function getDailyIndex() {
+      const now = new Date();
+      const kstTime = now.getTime() + (9 * 60 * 60 * 1000);
+      let dayCounter = Math.floor(kstTime / (24 * 60 * 60 * 1000));
+      const currentKSTHours = new Date(kstTime).getUTCHours(); 
+      if (currentKSTHours < 20) {
+          dayCounter -= 1;
+      }
+      return Math.abs(dayCounter % PRESETS.length);
+    }
+
+    function renderHighlight() {
+      if(!PRESETS.length) return;
+      const idx = getDailyIndex();
+      const item = PRESETS[idx]; 
+      hlContainer.innerHTML = `
+        <div class="hl-banner" onclick="openPreset('${item.link}')">
+           <img src="${item.img}" class="hl-img" alt="highlight">
+           <div class="hl-info">
+             <div class="hl-badge">🌟 오늘의 추천 명작 (매일 밤 8시 업데이트)</div>
+             <div class="hl-title">${item.label}</div>
+             <div class="hl-desc">강호의 고수가 추천하는 오늘의 명작👍</div>
+           </div>
+        </div>
+      `;
+    }
+
+    function toggleFav(e, link) {
+      e.stopPropagation();
+      if (favorites.includes(link)) { favorites = favorites.filter(f => f !== link); } 
+      else { favorites.push(link); }
+      localStorage.setItem(FAV_KEY, JSON.stringify(favorites));
+      if (currentTab === 'fav') { filterPresets(false); } else { renderPresets(); }
+    }
+
+    function renderPresets() {
+      presetList.innerHTML = "";
+      if (!currentList.length) {
+        presetList.innerHTML = `<div style="font-size:0.8rem; color:#888; text-align:center; padding:16px 0;">${currentTab === 'fav' ? '보관함에 저장된 작품이 없습니다.<br>마음에 드는 작품의 하트를 눌러보세요!' : currentTab === 'recent' ? '최근에 본 추천작이 없습니다.<br>작품을 누르면 여기에 쌓입니다.' : '검색 결과가 없습니다.'}</div>`;
+        pager.style.display = "none";
+        return;
+      }
+      const totalPages = Math.ceil(currentList.length / PAGE_SIZE);
+      if (currentPage > totalPages) currentPage = totalPages;
+      const pageItems = currentList.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+      
+      pageItems.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "preset-card";
+        card.onclick = () => { if (item.link) openPreset(item.link); };
+        const heartIcon = favorites.includes(item.link) ? "💖" : "🤍";
+        card.innerHTML = `
+          <img src="${item.img}" class="preset-img" alt="${item.label}">
+          <div class="preset-info">
+            <div class="preset-title">${item.label}</div>
+            <div class="preset-tags">${(item.tags || []).map(tag => `<span class="work-tag">#${tag}</span>`).join("")}</div>
+            <div class="preset-badge">
+              ${ item.badge ? `<span class="star">★</span><span>${item.badge}</span>` : "" }
+            </div>
+          </div>
+          <div class="fav-btn" onclick="toggleFav(event, '${item.link}')">${heartIcon}</div>
+        `;
+        presetList.appendChild(card);
+      });
+      if (totalPages > 1) {
+        pager.style.display = "flex";
+        pageInfo.textContent = `${currentPage} / ${totalPages}`;
+        prevPageBtn.disabled = currentPage === 1;
+        nextPageBtn.disabled = currentPage === totalPages;
+      } else { pager.style.display = "none"; }
+    }
+
+    let selectedTags = [];
+
+    function getAllTags() {
+      const count = {};
+      PRESETS.forEach(item => {
+        (item.tags || []).forEach(tag => {
+          if (!tag) return;
+          count[tag] = (count[tag] || 0) + 1;
+        });
+      });
+      return Object.keys(count).sort((a, b) => count[b] - count[a] || a.localeCompare(b, "ko"));
+    }
+
+    function renderTagFilters() {
+      const wrap = document.getElementById('presetTagWrap');
+      if (!wrap) return;
+      const tags = getAllTags();
+      if (!tags.length) { wrap.innerHTML = ""; return; }
+      const chips = tags.map(tag => {
+        const on = selectedTags.includes(tag) ? " active" : "";
+        return `<button type="button" class="tag-chip${on}" data-tag="${tag}">#${tag}</button>`;
+      });
+      wrap.innerHTML = chips.join("");
+      wrap.querySelectorAll('.tag-chip').forEach(btn => {
+        btn.onclick = () => {
+          const tag = btn.getAttribute('data-tag');
+          if (selectedTags.includes(tag)) selectedTags = selectedTags.filter(x => x !== tag);
+          else selectedTags.push(tag);
+          renderTagFilters();
+          filterPresets(true);
+        };
+      });
+    }
+
+    function filterPresets(resetPage = true) {
+      const labelKeyword = presetSearch ? presetSearch.value.trim().toLowerCase() : "";
+      const authorKeyword = authorSearch ? authorSearch.value.trim().toLowerCase() : "";
+      currentList = PRESETS.filter(item => {
+        if (currentTab === 'fav' && !favorites.includes(item.link)) return false;
+        if (currentTab === 'recent' && !presetHistory.includes(item.link)) return false;
+        const labelDigits = String(item.label).split(".")[0].replace(/\D/g, "");
+        const queryDigits = labelKeyword.replace(/\D/g, "");
+        const labelOk = !labelKeyword || String(item.label).toLowerCase().includes(labelKeyword) || (queryDigits && labelDigits.includes(queryDigits));
+        const tagKeyword = authorKeyword;
+        const authorOk = !tagKeyword || (item.tags || []).some(tag => tag.toLowerCase().includes(tagKeyword));
+        const itemTags = item.tags || [];
+        const tagOk = !selectedTags.length || selectedTags.every(tag => itemTags.includes(tag));
+        return labelOk && authorOk && tagOk;
+      });
+      if (currentTab === 'recent') {
+        currentList.sort((a, b) => presetHistory.indexOf(a.link) - presetHistory.indexOf(b.link));
+      }
+      if (resetPage) { currentPage = 1; } else {
+        const totalPages = Math.ceil(currentList.length / PAGE_SIZE) || 1;
+        if (currentPage > totalPages) currentPage = totalPages;
+      }
+      renderPresets();
+    }
+
+    const tabRecent = document.getElementById('tabRecent');
+    function setPresetTab(name) {
+      currentTab = name;
+      if (tabAll) tabAll.classList.toggle('active', name === 'all');
+      if (tabFav) tabFav.classList.toggle('active', name === 'fav');
+      if (tabRecent) tabRecent.classList.toggle('active', name === 'recent');
+      filterPresets(true);
+    }
+    if (tabAll) tabAll.onclick = () => setPresetTab('all');
+    if (tabFav) tabFav.onclick = () => setPresetTab('fav');
+    if (tabRecent) tabRecent.onclick = () => setPresetTab('recent');
+    if (presetSearch) presetSearch.addEventListener("input", () => filterPresets(true));
+    if (authorSearch) authorSearch.addEventListener("input", () => filterPresets(true));
+
+    function findPresetByCode(raw) {
+      const code = String(raw || "").trim();
+      if (!/^\d{1,3}$/.test(code)) return null;
+      const n = String(parseInt(code, 10));
+      return PRESETS.find(item => {
+        const m = String(item.label || "").match(/^(\d+)\./);
+        if (!m) return false;
+        return String(parseInt(m[1], 10)) === n;
+      }) || null;
+    }
+
+    function go() {
+      const num = numberInput.value.trim();
+      if (!num) { alert("번호를 입력하세요."); return; }
+      let recents = JSON.parse(localStorage.getItem(RECENT_KEY) || "[]");
+      recents = [num, ...recents.filter(n => n !== num)].slice(0, 5);
+      localStorage.setItem(RECENT_KEY, JSON.stringify(recents));
+      renderRecents();
+      const preset = findPresetByCode(num);
+      if (preset && preset.link) {
+        openPreset(preset.link);
+        return;
+      }
+      window.open(getCurrentSite().pattern.replace("{num}", encodeURIComponent(num)), '_blank');
+    }
+
+    function goRandom() {
+      const pool = (currentList && currentList.length ? currentList : PRESETS).filter(item => item && item.link);
+      if (!pool.length) { alert("선택한 태그에 맞는 작품이 없습니다."); return; }
+      openPreset(pool[Math.floor(Math.random() * pool.length)].link);
+    }
+
+    if (goButton) goButton.onclick = go;
+    if (randomButton) randomButton.onclick = goRandom;
+    if (numberInput) numberInput.onkeydown = e => { if (e.key === "Enter") go(); };
+    if (prevPageBtn) prevPageBtn.onclick = () => { if (currentPage > 1) { currentPage--; renderPresets(); } };
+    if (nextPageBtn) nextPageBtn.onclick = () => { const totalPages = Math.ceil(currentList.length / PAGE_SIZE); if (currentPage < totalPages) { currentPage++; renderPresets(); } };
+
+    if (shareSiteBtn) {
+      shareSiteBtn.onclick = () => {
+        const url = "https://ganghodori.com"; 
+        if (navigator.share) {
+          navigator.share({ title: '강호의 도리', text: '숨겨진 명작들을 빠르게 찾아보세요!', url: url }).catch(console.error);
+        } else {
+          navigator.clipboard.writeText(url).then(() => { alert("홈페이지 주소가 복사되었습니다!"); }).catch(() => { alert("공유할 주소: " + url); });
+        }
+      };
+    }
+
+    const topInstallBtn = document.getElementById('installAppBtn');
+    if (topInstallBtn) {
+      topInstallBtn.onclick = () => {
+        logGAEvent('top_install_btn_click');
+        const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
+        if (!isStandalone) { showInstallModal(); }
+      };
+    }
+
+    function getKstDateKey() {
+      const kst = new Date(Date.now() + (9 * 60 * 60 * 1000));
+      return kst.toISOString().slice(0, 10);
+    }
+
+    async function hashMemberPassword(value) {
+      const payload = MEMBER_PASSWORD_SALT + ":" + String(value || "").trim();
+      const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(payload));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+    }
+
+    function isMemberUnlocked() {
+      try {
+        const raw = localStorage.getItem(MEMBER_GATE_KEY);
+        if (!raw) return false;
+        const data = JSON.parse(raw);
+        return data && data.hash === MEMBER_PASSWORD_HASH && data.day === getKstDateKey();
+      } catch (e) {
+        return false;
+      }
+    }
+
+    function showAdminNoticeIfNeeded() {
+      const modal = document.getElementById('adminNoticeModalOverlay');
+      if (!modal) return;
+      const hideUntil = parseInt(localStorage.getItem(ADMIN_NOTICE_KEY) || '0', 10);
+      if (hideUntil && Date.now() < hideUntil) return;
+      modal.style.display = 'flex';
+    }
+
+    function unlockMemberUI() {
+      const overlay = document.getElementById('memberOverlay');
+      const layer = document.getElementById('firstClickLayer');
+      if (overlay) overlay.style.display = 'none';
+      if (layer) layer.remove();
+      document.body.classList.remove('member-locked');
+      showAdminNoticeIfNeeded();
+    }
+
+    function checkMemberGate() {
+      const overlay = document.getElementById('memberOverlay');
+      const input = document.getElementById('memberInput');
+      const btn = document.getElementById('memberUnlockBtn');
+      const err = document.getElementById('memberError');
+      if (!overlay) return;
+
+      // 운영자용: true면 멤버십 비밀코드 창을 건너뛰고 바로 메인 화면(PRESETS)을 보여줌. 배포 시 false로.
+      const SKIP_MEMBER_GATE = true;
+      if (SKIP_MEMBER_GATE || isMemberUnlocked()) {
+        unlockMemberUI();
+        return;
+      }
+
+      document.body.classList.add('member-locked');
+      overlay.style.display = 'flex';
+      if (input) setTimeout(() => input.focus(), 80);
+
+      const tryUnlock = async () => {
+        const value = (input && input.value ? input.value : "").trim();
+        if (!value) return;
+        const hashed = await hashMemberPassword(value);
+        if (hashed === MEMBER_PASSWORD_HASH) {
+          localStorage.setItem(MEMBER_GATE_KEY, JSON.stringify({ hash: hashed, day: getKstDateKey() }));
+          logGAEvent('member_unlock_success');
+          const layer = document.getElementById('firstClickLayer');
+          if (layer) layer.remove();
+          unlockMemberUI();
+        } else {
+          if (err) err.style.display = 'block';
+          if (input) {
+            input.value = '';
+            input.focus();
+          }
+        }
+      };
+
+      function showFirstClickCountdown() {
+        const layer = document.getElementById('firstClickLayer');
+        if (layer) layer.style.display = 'none';
+        const wait = document.getElementById('memberAdWait');
+        const countEl = document.getElementById('memberAdCount');
+        const joinBox = document.querySelector('.member-join-box');
+        if (input) input.style.display = 'none';
+        if (btn) btn.style.display = 'none';
+        if (err) err.style.display = 'none';
+        if (joinBox) joinBox.style.display = 'none';
+        if (wait) wait.style.display = 'block';
+        const desc = overlay.querySelector('.pin-desc');
+        if (desc) desc.innerHTML = '3초 후 쿠팡으로 이동합니다.<br>뒤로 가면 코드 입력 창입니다.<br><span style="color:#94a3b8; font-size:0.75rem;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</span>';
+        let left = 3;
+        if (countEl) countEl.textContent = String(left);
+        const timer = setInterval(() => {
+          left -= 1;
+          if (countEl) countEl.textContent = String(Math.max(left, 0));
+          if (left <= 0) {
+            clearInterval(timer);
+            logGAEvent('first_click_ad');
+            localStorage.setItem('kango_first_click_day', getKstDateKey());
+            location.href = MEMBER_AD_URL;
+          }
+        }, 1000);
+      }
+
+      function restoreEntryForm() {
+        const layer = document.getElementById('firstClickLayer');
+        const wait = document.getElementById('memberAdWait');
+        const joinBox = document.querySelector('.member-join-box');
+        const desc = overlay.querySelector('.pin-desc');
+        if (layer) layer.remove();
+        if (wait) wait.style.display = 'none';
+        if (input) input.style.display = '';
+        if (btn) btn.style.display = '';
+        if (err) err.style.display = 'none';
+        if (joinBox) joinBox.style.display = '';
+        if (desc) desc.innerHTML = '비밀코드는 멤버십 가입 후 제공됩니다.<br>이미 코드를 받으셨다면 아래에 입력해 주세요.';
+      }
+
+      const firstLayer = document.getElementById('firstClickLayer');
+      if (localStorage.getItem('kango_first_click_day') === getKstDateKey()) {
+        restoreEntryForm();
+      } else if (firstLayer) {
+        firstLayer.onclick = showFirstClickCountdown;
+      }
+
+      window.addEventListener('pageshow', () => {
+        if (localStorage.getItem('kango_first_click_day') === getKstDateKey()) restoreEntryForm();
+      });
+
+      if (btn) btn.onclick = tryUnlock;
+      if (input) input.onkeydown = (e) => { if (e.key === 'Enter') tryUnlock(); };
+
+      const ytBtn = document.getElementById('memberYoutubeBtn');
+      if (ytBtn) {
+        ytBtn.onclick = () => {
+          logGAEvent('member_youtube_click');
+          window.open(YOUTUBE_MEMBERSHIP_URL, '_blank');
+        };
+      }
+      const patreonBtn = document.getElementById('memberPatreonBtn');
+      if (patreonBtn) {
+        patreonBtn.onclick = () => {
+          logGAEvent('member_patreon_click');
+          window.open(PATREON_MEMBERSHIP_URL, '_blank');
+        };
+      }
+      const discordBtn = document.getElementById('memberDiscordBtn');
+      if (discordBtn) {
+        discordBtn.onclick = () => {
+          logGAEvent('member_discord_click');
+          window.open(SABUKARU_DISCORD_URL, '_blank');
+        };
+      }
+    }
+
+(function init() {
+      initTheme();
+      initSiteSelect();
+      renderRecents();
+      renderSavedNums(); 
+      renderHighlight();
+      currentList = PRESETS.slice();
+      currentPage = 1;
+      renderTagFilters();
+      renderPresets();
+      checkMemberGate();
+      
+      const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
+
+      // 인스타/틱톡 등 인앱 브라우저에서만 외부 브라우저 안내 모달 표시
+      if (isInAppBrowser() && noticeOverlay) {
+        noticeOverlay.style.display = "flex";
+        if (noticeOkBtn) {
+          noticeOkBtn.innerText = "👆 우측 상단 더보기 메뉴를 눌러주세요";
+          noticeOkBtn.style.background = "#6b7280";
+          noticeOkBtn.style.boxShadow = "none";
+        }
+      }
+      
+      if (isStandalone) {
+        if (topInstallBtn) {
+          topInstallBtn.innerHTML = '🔒 앱 잠금 설정';
+          topInstallBtn.classList.remove('install');
+        }
+        const subtitleEl = document.querySelector('.subtitle');
+        if (subtitleEl) {
+          subtitleEl.innerHTML = "👑 <b>VIP 앱 사용자님, 환영합니다!</b> 👑<br><span style='font-size:0.75rem; color:#d97706;'>홈 화면에서 바로 실행 · 앱 잠금 지원</span>";
+        }
+      }
+    })();
+  </script>
+
+
+</body></html>
